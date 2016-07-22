@@ -23,7 +23,8 @@ function normalizeMedia(media) {
   return {
     sourceID: media.id,
     sourceData,
-    artist, title,
+    artist,
+    title,
     duration: Math.round(parseInt(media.duration / 1000, 10)),
     thumbnail: media.artwork_url || media.user.avatar_url,
     restricted: []
