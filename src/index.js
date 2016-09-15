@@ -52,7 +52,7 @@ export default function soundCloudSource(uw, opts = {}) {
     // Ensure the results order is the same as the sourceIDs parameter order.
     // TODO deal with nonexistant source IDs
     const items = {};
-    response.body.forEach(sound => {
+    response.body.forEach((sound) => {
       const item = normalizeMedia(sound);
       items[item.sourceID] = item;
     });
