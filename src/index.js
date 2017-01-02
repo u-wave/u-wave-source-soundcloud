@@ -13,6 +13,9 @@ function normalizeMedia(media) {
   const [artist, title] = getArtistTitle(media.title, [
     'base', fallBackToArtist(media.user.username)
   ]);
+
+  const thumbnail = media.artwork_url || media.user.avatar_url;
+
   const sourceData = {
     fullTitle: media.title,
     permalinkUrl: media.permalink_url,
@@ -26,7 +29,9 @@ function normalizeMedia(media) {
     artist,
     title,
     duration: Math.round(parseInt(media.duration / 1000, 10)),
-    thumbnail: media.artwork_url || media.user.avatar_url,
+    // Use larger thumbnail images:
+    // -large is 100x100, -crop is 400x400.
+    thumbnail: thumbnail ? thumbnail.replace('-large.', '-crop.') : null,
     restricted: []
   };
 }
