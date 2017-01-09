@@ -1,6 +1,6 @@
 import Promise from 'bluebird';
 import requestCb from 'request';
-import getArtistTitle, { fallBackToArtist } from 'get-artist-title';
+import getArtistTitle from 'get-artist-title';
 
 const request = Promise.promisify(requestCb.defaults({
   baseUrl: 'https://api.soundcloud.com',
@@ -10,9 +10,9 @@ const request = Promise.promisify(requestCb.defaults({
 const PAGE_SIZE = 50;
 
 function normalizeMedia(media) {
-  const [artist, title] = getArtistTitle(media.title, [
-    'base', fallBackToArtist(media.user.username)
-  ]);
+  const [artist, title] = getArtistTitle(media.title, {
+    defaultArtist: media.user.username
+  });
 
   const thumbnail = media.artwork_url || media.user.avatar_url;
 
