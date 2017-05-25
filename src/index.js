@@ -46,22 +46,45 @@ export default function soundCloudSource(uw, opts = {}) {
     return normalizeMedia(response.body);
   }
 
-  async function get(sourceIDs) {
-    const response = await request('/tracks', {
+  function sortSourceIDsAndURLs(list) {
+    const urls = [];
+    const sourceIDs = [];
+    list.forEach((item) => {
+      if (/^https?:/.test(item)) {
+        urls.push(item);
+      } else {
+        sourceIDs.push(item);
+      }
+    });
+    return { urls, sourceIDs };
+  }
+
+  async function get(sourceIDsAndURLs) {
+    const { urls, sourceIDs } = sortSourceIDsAndURLs(sourceIDsAndURLs);
+
+    // Use the `/resolve` endpoint when items are added by their URL.
+    const urlsPromise = Promise.all(urls.map(resolve));
+    const sourceIDsPromise = request('/tracks', {
       qs: {
         ...params,
         ids: sourceIDs.join(',')
       }
-    });
+    }).then(response => response.body);
+
+    const [urlItems, sourceIDItems] = await Promise.all([urlsPromise, sourceIDsPromise]);
 
     // Ensure the results order is the same as the sourceIDs parameter order.
     // TODO deal with nonexistant source IDs
     const items = {};
-    response.body.forEach((sound) => {
+    urls.forEach((url, index) => {
+      const item = urlItems[index];
+      items[url] = item;
+    });
+    sourceIDItems.forEach((sound) => {
       const item = normalizeMedia(sound);
       items[item.sourceID] = item;
     });
-    return sourceIDs.map(id => items[id]);
+    return sourceIDsAndURLs.map(input => items[input]);
   }
 
   async function search(query, offset = 0) {
