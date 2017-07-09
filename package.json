@@ -1,6 +1,6 @@
 {
   "name": "u-wave-source-soundcloud",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "SoundCloud media source for üWave.",
   "license": "MIT",
   "repository": "u-wave/u-wave-source-soundcloud",
