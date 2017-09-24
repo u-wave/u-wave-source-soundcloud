@@ -4,7 +4,7 @@ import getArtistTitle from 'get-artist-title';
 
 const request = Promise.promisify(requestCb.defaults({
   baseUrl: 'https://api.soundcloud.com',
-  json: true
+  json: true,
 }));
 
 const PAGE_SIZE = 50;
@@ -23,7 +23,7 @@ function getThumbnailUrl(item) {
 
 function normalizeMedia(media) {
   const [artist, title] = getArtistTitle(media.title, {
-    defaultArtist: media.user.username
+    defaultArtist: media.user.username,
   });
 
   const sourceData = {
@@ -31,7 +31,7 @@ function normalizeMedia(media) {
     permalinkUrl: media.permalink_url,
     streamUrl: media.stream_url,
     artistUrl: media.user.permalink_url,
-    username: media.user.username
+    username: media.user.username,
   };
   return {
     sourceID: media.id,
@@ -40,7 +40,7 @@ function normalizeMedia(media) {
     title,
     duration: Math.round(parseInt(media.duration / 1000, 10)),
     thumbnail: getThumbnailUrl(media),
-    restricted: []
+    restricted: [],
   };
 }
 
@@ -49,7 +49,7 @@ export default function soundCloudSource(uw, opts = {}) {
 
   async function resolve(url) {
     const response = await request('/resolve', {
-      qs: { ...params, url }
+      qs: { ...params, url },
     });
     return normalizeMedia(response.body);
   }
@@ -75,8 +75,8 @@ export default function soundCloudSource(uw, opts = {}) {
     const sourceIDsPromise = request('/tracks', {
       qs: {
         ...params,
-        ids: sourceIDs.join(',')
-      }
+        ids: sourceIDs.join(','),
+      },
     }).then(response => response.body);
 
     const [urlItems, sourceIDItems] = await Promise.all([urlsPromise, sourceIDsPromise]);
@@ -105,8 +105,8 @@ export default function soundCloudSource(uw, opts = {}) {
         ...params,
         offset,
         q: query,
-        limit: PAGE_SIZE
-      }
+        limit: PAGE_SIZE,
+      },
     });
 
     return response.body.map(normalizeMedia);
@@ -114,6 +114,6 @@ export default function soundCloudSource(uw, opts = {}) {
 
   return {
     search,
-    get: get // eslint-disable-line object-shorthand
+    get: get, // eslint-disable-line object-shorthand
   };
 }
