@@ -113,6 +113,7 @@ export default function soundCloudSource(uw, opts = {}) {
   }
 
   return {
+    name: 'soundcloud',
     search,
     get: get, // eslint-disable-line object-shorthand
   };
