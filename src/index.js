@@ -1,12 +1,8 @@
 import Promise from 'bluebird';
-import requestCb from 'request';
+import got from 'got';
 import getArtistTitle from 'get-artist-title';
 
-const request = Promise.promisify(requestCb.defaults({
-  baseUrl: 'https://api.soundcloud.com',
-  json: true,
-}));
-
+const API_URL = 'https://api.soundcloud.com';
 const PAGE_SIZE = 50;
 
 function enlargeThumbnail(thumbnail) {
@@ -48,8 +44,9 @@ export default function soundCloudSource(uw, opts = {}) {
   const params = { client_id: opts.key };
 
   async function resolve(url) {
-    const response = await request('/resolve', {
-      qs: { ...params, url },
+    const response = await got(`${API_URL}/resolve`, {
+      json: true,
+      query: { ...params, url },
     });
     return normalizeMedia(response.body);
   }
@@ -72,8 +69,9 @@ export default function soundCloudSource(uw, opts = {}) {
 
     // Use the `/resolve` endpoint when items are added by their URL.
     const urlsPromise = Promise.all(urls.map(resolve));
-    const sourceIDsPromise = request('/tracks', {
-      qs: {
+    const sourceIDsPromise = got(`${API_URL}/tracks`, {
+      json: true,
+      query: {
         ...params,
         ids: sourceIDs.join(','),
       },
@@ -100,8 +98,9 @@ export default function soundCloudSource(uw, opts = {}) {
       const track = await resolve(query);
       return [track];
     }
-    const response = await request('/tracks', {
-      qs: {
+    const response = await got(`${API_URL}/tracks`, {
+      json: true,
+      query: {
         ...params,
         offset,
         q: query,

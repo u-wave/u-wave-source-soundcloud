@@ -20,7 +20,7 @@
   "dependencies": {
     "bluebird": "^3.3.5",
     "get-artist-title": "^1.0.0",
-    "request": "^2.72.0"
+    "got": "^8.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
