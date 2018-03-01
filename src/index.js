@@ -1,4 +1,3 @@
-import Promise from 'bluebird';
 import got from 'got';
 import getArtistTitle from 'get-artist-title';
 
