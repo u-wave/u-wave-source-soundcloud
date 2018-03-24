@@ -1,6 +1,8 @@
 üWave SoundCloud Media Source
 =============================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/u-wave/u-wave-source-soundcloud.svg)](https://greenkeeper.io/)
+
 A üWave media source for searching songs from SoundCloud.
 
 ## Installation
