@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "get-artist-title": "^1.0.0",
-    "got": "^8.1.0"
+    "got": "^9.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
