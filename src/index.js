@@ -1,4 +1,5 @@
-import got from 'got';
+import { URL, URLSearchParams } from 'url';
+import fetch from 'node-fetch';
 import getArtistTitle from 'get-artist-title';
 
 const API_URL = 'https://api.soundcloud.com';
@@ -49,11 +50,15 @@ export default function soundCloudSource(uw, opts = {}) {
   const params = { client_id: opts.key };
 
   async function resolve(url) {
-    const response = await got(`${API_URL}/resolve`, {
-      json: true,
-      query: { ...params, url },
+    const request = new URL('/resolve', API_URL);
+    request.search = new URLSearchParams({ ...params, url });
+    const response = await fetch(request, {
+      headers: {
+        accept: 'application/json',
+      },
     });
-    return normalizeMedia(response.body);
+    const body = await response.json();
+    return normalizeMedia(body);
   }
 
   function sortSourceIDsAndURLs(list) {
@@ -74,13 +79,16 @@ export default function soundCloudSource(uw, opts = {}) {
 
     // Use the `/resolve` endpoint when items are added by their URL.
     const urlsPromise = Promise.all(urls.map(resolve));
-    const sourceIDsPromise = got(`${API_URL}/tracks`, {
-      json: true,
-      query: {
-        ...params,
-        ids: sourceIDs.join(','),
+    const request = new URL('/tracks', API_URL);
+    request.search = new URLSearchParams({
+      ...params,
+      ids: sourceIDs.join(','),
+    });
+    const sourceIDsPromise = fetch(request, {
+      headers: {
+        accept: 'application/json',
       },
-    }).then(response => response.body);
+    }).then(response => response.json());
 
     const [urlItems, sourceIDItems] = await Promise.all([urlsPromise, sourceIDsPromise]);
 
@@ -103,13 +111,16 @@ export default function soundCloudSource(uw, opts = {}) {
       const track = await resolve(query);
       return [track];
     }
-    const response = await got(`${API_URL}/tracks`, {
-      json: true,
-      query: {
-        ...params,
-        offset,
-        q: query,
-        limit: PAGE_SIZE,
+    const request = new URL('/tracks', API_URL);
+    request.search = new URLSearchParams({
+      ...params,
+      offset,
+      q: query,
+      limit: PAGE_SIZE,
+    });
+    const response = await fetch(request, {
+      headers: {
+        accept: 'application/json',
       },
     });
 
