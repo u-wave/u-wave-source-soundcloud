@@ -18,18 +18,18 @@
     "node": ">= 8.9"
   },
   "dependencies": {
-    "get-artist-title": "^1.0.0",
-    "got": "^8.1.0"
+    "get-artist-title": "^1.1.1",
+    "got": "^8.3.2"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "@babel/core": "7.0.0-rc.1",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0-rc.1",
     "eslint": "^4.6.0",
     "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-import": "^2.13.0",
     "is-builtin-module": "^2.0.0",
     "rollup": "^0.64.0",
-    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-babel": "^4.0.0-beta.8",
     "rollup-plugin-node-resolve": "^3.0.2"
   },
   "scripts": {
