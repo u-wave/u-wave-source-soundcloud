@@ -1,8 +1,6 @@
-import { URL, URLSearchParams } from 'url';
-import fetch from 'node-fetch';
 import getArtistTitle from 'get-artist-title';
+import SoundCloudClient from './Client';
 
-const API_URL = 'https://api.soundcloud.com';
 const PAGE_SIZE = 50;
 
 function enlargeThumbnail(thumbnail) {
@@ -47,17 +45,10 @@ export default function soundCloudSource(uw, opts = {}) {
       + 'https://soundcloud.com/you/apps.');
   }
 
-  const params = { client_id: opts.key };
+  const client = new SoundCloudClient({ client_id: opts.key });
 
   async function resolve(url) {
-    const request = new URL('/resolve', API_URL);
-    request.search = new URLSearchParams({ ...params, url });
-    const response = await fetch(request, {
-      headers: {
-        accept: 'application/json',
-      },
-    });
-    const body = await response.json();
+    const body = await client.resolveTrack({ url });
     return normalizeMedia(body);
   }
 
@@ -79,16 +70,7 @@ export default function soundCloudSource(uw, opts = {}) {
 
     // Use the `/resolve` endpoint when items are added by their URL.
     const urlsPromise = Promise.all(urls.map(resolve));
-    const request = new URL('/tracks', API_URL);
-    request.search = new URLSearchParams({
-      ...params,
-      ids: sourceIDs.join(','),
-    });
-    const sourceIDsPromise = fetch(request, {
-      headers: {
-        accept: 'application/json',
-      },
-    }).then(response => response.json());
+    const sourceIDsPromise = client.getTracks({ ids: sourceIDs.join(',') });
 
     const [urlItems, sourceIDItems] = await Promise.all([urlsPromise, sourceIDsPromise]);
 
@@ -111,20 +93,14 @@ export default function soundCloudSource(uw, opts = {}) {
       const track = await resolve(query);
       return [track];
     }
-    const request = new URL('/tracks', API_URL);
-    request.search = new URLSearchParams({
-      ...params,
+
+    const results = await client.getTracks({
       offset,
       q: query,
       limit: PAGE_SIZE,
     });
-    const response = await fetch(request, {
-      headers: {
-        accept: 'application/json',
-      },
-    });
 
-    return response.body.map(normalizeMedia);
+    return results.map(normalizeMedia);
   }
 
   return {
