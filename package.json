@@ -24,17 +24,25 @@
   "devDependencies": {
     "@babel/core": "7.0.0-rc.1",
     "@babel/plugin-proposal-object-rest-spread": "7.0.0-rc.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-rc.1",
+    "@babel/register": "^7.0.0-rc.1",
+    "cross-env": "^5.2.0",
     "eslint": "^4.6.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
     "is-builtin-module": "^2.0.0",
+    "nock": "^9.6.1",
     "rollup": "^0.64.0",
     "rollup-plugin-babel": "^4.0.0-beta.8",
-    "rollup-plugin-node-resolve": "^3.0.2"
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "tape": "^4.9.1",
+    "tape-promise": "^3.0.0"
   },
   "scripts": {
     "prepare": "npm run build",
-    "test": "eslint src",
-    "build": "rollup -c"
+    "test:lint": "eslint .",
+    "test:tape": "node -r @babel/register test",
+    "test": "npm run test:tape && npm run test:lint",
+    "build": "cross-env BABEL_ENV=rollup rollup -c"
   }
 }

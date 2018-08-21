@@ -1,3 +1,0 @@
-{
-  "plugins": ["@babel/proposal-object-rest-spread"]
-}

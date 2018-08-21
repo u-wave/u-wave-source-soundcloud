@@ -40,6 +40,12 @@ function normalizeMedia(media) {
 }
 
 export default function soundCloudSource(uw, opts = {}) {
+  if (!opts.key) {
+    throw new TypeError('Expected a SoundCloud API key in "options.key". For information on how to '
+      + 'configure your SoundCloud API access, see '
+      + 'https://soundcloud.com/you/apps.');
+  }
+
   const params = { client_id: opts.key };
 
   async function resolve(url) {
