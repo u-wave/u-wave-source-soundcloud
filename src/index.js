@@ -1,7 +1,6 @@
-import got from 'got';
 import getArtistTitle from 'get-artist-title';
+import SoundCloudClient from './Client';
 
-const API_URL = 'https://api.soundcloud.com';
 const PAGE_SIZE = 50;
 
 function enlargeThumbnail(thumbnail) {
@@ -46,14 +45,11 @@ export default function soundCloudSource(uw, opts = {}) {
       + 'https://soundcloud.com/you/apps.');
   }
 
-  const params = { client_id: opts.key };
+  const client = new SoundCloudClient({ client_id: opts.key });
 
   async function resolve(url) {
-    const response = await got(`${API_URL}/resolve`, {
-      json: true,
-      query: { ...params, url },
-    });
-    return normalizeMedia(response.body);
+    const body = await client.resolveTrack({ url });
+    return normalizeMedia(body);
   }
 
   function sortSourceIDsAndURLs(list) {
@@ -74,13 +70,7 @@ export default function soundCloudSource(uw, opts = {}) {
 
     // Use the `/resolve` endpoint when items are added by their URL.
     const urlsPromise = Promise.all(urls.map(resolve));
-    const sourceIDsPromise = got(`${API_URL}/tracks`, {
-      json: true,
-      query: {
-        ...params,
-        ids: sourceIDs.join(','),
-      },
-    }).then(response => response.body);
+    const sourceIDsPromise = client.getTracks({ ids: sourceIDs.join(',') });
 
     const [urlItems, sourceIDItems] = await Promise.all([urlsPromise, sourceIDsPromise]);
 
@@ -103,17 +93,14 @@ export default function soundCloudSource(uw, opts = {}) {
       const track = await resolve(query);
       return [track];
     }
-    const response = await got(`${API_URL}/tracks`, {
-      json: true,
-      query: {
-        ...params,
-        offset,
-        q: query,
-        limit: PAGE_SIZE,
-      },
+
+    const results = await client.getTracks({
+      offset,
+      q: query,
+      limit: PAGE_SIZE,
     });
 
-    return response.body.map(normalizeMedia);
+    return results.map(normalizeMedia);
   }
 
   return {
