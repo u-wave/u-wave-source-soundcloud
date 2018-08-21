@@ -33,7 +33,7 @@
     "rollup-plugin-node-resolve": "^3.0.2"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "test": "eslint src",
     "build": "rollup -c"
   }
