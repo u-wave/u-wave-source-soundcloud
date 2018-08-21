@@ -11,7 +11,7 @@ export default class SoundCloudClient {
   }
 
   async get(resource, options) {
-    const url = new URL(resource, this.baseURL);
+    const url = new URL(resource, this.baseUrl);
     url.search = new URLSearchParams({ ...this.params, ...options });
     const response = await fetch(url, {
       headers: {
