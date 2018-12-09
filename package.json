@@ -34,7 +34,7 @@
     "nock": "^9.6.1",
     "rollup": "^0.67.0",
     "rollup-plugin-babel": "^4.0.2",
-    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-node-resolve": "^4.0.0",
     "tape": "^4.9.1",
     "tape-promise": "^4.0.0"
   },
