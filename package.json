@@ -19,13 +19,13 @@
   },
   "dependencies": {
     "get-artist-title": "^1.1.1",
-    "node-fetch": "^2.2.0"
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.0.0",
-    "@babel/register": "^7.0.0",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "@babel/register": "^7.5.5",
     "cross-env": "^5.2.0",
     "eslint": "^6.0.0",
     "eslint-config-airbnb-base": "^14.0.0",
@@ -33,9 +33,9 @@
     "is-builtin-module": "^3.0.0",
     "nock": "^9.6.1",
     "rollup": "^1.0.0",
-    "rollup-plugin-babel": "^4.0.2",
+    "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-node-resolve": "^5.0.0",
-    "tape": "^4.9.1",
+    "tape": "^4.11.0",
     "tape-promise": "^4.0.0"
   },
   "scripts": {
