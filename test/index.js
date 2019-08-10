@@ -13,7 +13,7 @@ const createSource = () => soundCloudSource({}, { key: FAKE_KEY });
 
 const API_HOST = 'https://api.soundcloud.com';
 
-const fixture = name => path.join(__dirname, 'responses', `${name}.json`);
+const fixture = (name) => path.join(__dirname, 'responses', `${name}.json`);
 
 test('providing a key is required', (t) => {
   t.throws(
