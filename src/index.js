@@ -85,7 +85,7 @@ export default function soundCloudSource(uw, opts = {}) {
       const item = normalizeMedia(sound);
       items[item.sourceID] = item;
     });
-    return sourceIDsAndURLs.map(input => items[input]);
+    return sourceIDsAndURLs.map((input) => items[input]);
   }
 
   async function search(query, offset = 0) {
