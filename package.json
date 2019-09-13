@@ -15,7 +15,7 @@
     "soundcloud"
   ],
   "engines": {
-    "node": ">= 8.9"
+    "node": ">= 10"
   },
   "dependencies": {
     "get-artist-title": "^1.1.1",
