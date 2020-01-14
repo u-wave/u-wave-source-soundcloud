@@ -1,24 +1,39 @@
 import getArtistTitle from 'get-artist-title';
-import SoundCloudClient from './Client';
+import SoundCloudClient, { TrackResource } from './Client';
 
 const PAGE_SIZE = 50;
 
-function enlargeThumbnail(thumbnail) {
+export interface UwMedia {
+  sourceID: string;
+  artist: string;
+  title: string;
+  duration: number;
+  thumbnail?: string;
+  sourceData: {
+    fullTitle: string,
+    permalinkUrl: string,
+    streamUrl: string,
+    artistUrl: string,
+    username: string,
+  };
+};
+
+function enlargeThumbnail(thumbnail: string): string | undefined {
   // Use larger thumbnail images:
   // -large is 100x100, -crop is 400x400.
-  return thumbnail ? thumbnail.replace('-large.', '-crop.') : null;
+  return thumbnail ? thumbnail.replace('-large.', '-crop.') : undefined;
 }
 
-function getThumbnailUrl(item) {
+function getThumbnailUrl(item: TrackResource): string | undefined {
   const thumbnail = item.artwork_url || (item.user && item.user.avatar_url);
 
   return enlargeThumbnail(thumbnail);
 }
 
-function normalizeMedia(media) {
+function normalizeMedia(media: TrackResource): UwMedia {
   const [artist, title] = getArtistTitle(media.title, {
     defaultArtist: media.user.username,
-  });
+  })!;
 
   const sourceData = {
     fullTitle: media.title,
@@ -28,18 +43,21 @@ function normalizeMedia(media) {
     username: media.user.username,
   };
   return {
-    sourceID: media.id,
+    sourceID: `${media.id}`,
     sourceData,
     artist,
     title,
-    duration: Math.round(parseInt(media.duration / 1000, 10)),
+    duration: Math.round(media.duration / 1000),
     thumbnail: getThumbnailUrl(media),
-    restricted: [],
   };
 }
 
-export default function soundCloudSource(uw, opts = {}) {
-  if (!opts.key) {
+export type SoundCloudOptions = {
+  key: string,
+};
+
+export default function soundCloudSource(uw: unknown, opts: SoundCloudOptions) {
+  if (!opts || !opts.key) {
     throw new TypeError('Expected a SoundCloud API key in "options.key". For information on how to '
       + 'configure your SoundCloud API access, see '
       + 'https://soundcloud.com/you/apps.');
@@ -47,14 +65,14 @@ export default function soundCloudSource(uw, opts = {}) {
 
   const client = new SoundCloudClient({ client_id: opts.key });
 
-  async function resolve(url) {
+  async function resolve(url: string) {
     const body = await client.resolveTrack({ url });
     return normalizeMedia(body);
   }
 
-  function sortSourceIDsAndURLs(list) {
-    const urls = [];
-    const sourceIDs = [];
+  function sortSourceIDsAndURLs(list: string[]): { urls: string[], sourceIDs: string[] } {
+    const urls: string[] = [];
+    const sourceIDs: string[] = [];
     list.forEach((item) => {
       if (/^https?:/.test(item)) {
         urls.push(item);
@@ -65,7 +83,7 @@ export default function soundCloudSource(uw, opts = {}) {
     return { urls, sourceIDs };
   }
 
-  async function get(sourceIDsAndURLs) {
+  async function get(sourceIDsAndURLs: string[]): Promise<UwMedia[]> {
     const { urls, sourceIDs } = sortSourceIDsAndURLs(sourceIDsAndURLs);
 
     // Use the `/resolve` endpoint when items are added by their URL.
@@ -76,7 +94,7 @@ export default function soundCloudSource(uw, opts = {}) {
 
     // Ensure the results order is the same as the sourceIDs parameter order.
     // TODO deal with nonexistant source IDs
-    const items = {};
+    const items: { [key: string]: UwMedia } = {};
     urls.forEach((url, index) => {
       const item = urlItems[index];
       items[url] = item;
@@ -88,13 +106,13 @@ export default function soundCloudSource(uw, opts = {}) {
     return sourceIDsAndURLs.map((input) => items[input]);
   }
 
-  async function search(query, offset = 0) {
+  async function search(query: string, offset = 0): Promise<UwMedia[]> {
     if (/^https?:\/\/(api\.)?soundcloud\.com\//.test(query)) {
       const track = await resolve(query);
       return [track];
     }
 
-    const results = await client.getTracks({
+    const results = await client.search({
       offset,
       q: query,
       limit: PAGE_SIZE,

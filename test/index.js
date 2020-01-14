@@ -1,9 +1,9 @@
-import promisifyTape from 'tape-promise';
-import tape from 'tape';
-import nock from 'nock';
-import path from 'path';
-import fs from 'fs';
-import soundCloudSource from '../src';
+const promisifyTape = require('tape-promise').default;
+const tape = require('tape');
+const nock = require('nock');
+const path = require('path');
+const fs = require('fs');
+const soundCloudSource = require('../');
 
 const test = promisifyTape(tape);
 
