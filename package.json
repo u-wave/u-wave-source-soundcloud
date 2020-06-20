@@ -8,8 +8,8 @@
   "contributors": [
     "Renée Kooi <renee@kooi.me>"
   ],
-  "main": "dist/u-wave-source-soundcloud.cjs.js",
-  "module": "dist/u-wave-source-soundcloud.es.js",
+  "main": "dist/u-wave-source-soundcloud.cjs",
+  "module": "dist/u-wave-source-soundcloud.mjs",
   "keywords": [
     "u-wave-source",
     "soundcloud"
