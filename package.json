@@ -8,8 +8,8 @@
   "contributors": [
     "Renée Kooi <renee@kooi.me>"
   ],
-  "main": "dist/u-wave-source-soundcloud.cjs",
-  "module": "dist/u-wave-source-soundcloud.mjs",
+  "main": "index.js",
+  "type": "commonjs",
   "keywords": [
     "u-wave-source",
     "soundcloud"
@@ -22,20 +22,15 @@
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^8.0.1",
     "@types/node-fetch": "^2.5.4",
-    "is-builtin-module": "^3.0.0",
     "nock": "^13.0.0",
-    "rollup": "^2.0.0",
-    "rollup-plugin-typescript2": "^0.27.0",
     "tape": "^5.0.0",
     "tape-promise": "^4.0.0",
-    "tslib": "^2.0.0",
     "typescript": "^3.7.3"
   },
   "scripts": {
     "prepare": "npm run build",
     "test": "npm run build && node test",
-    "build": "rollup -c"
+    "build": "tsc"
   }
 }

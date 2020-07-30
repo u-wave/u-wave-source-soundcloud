@@ -1,4 +1,4 @@
-import getArtistTitle from 'get-artist-title';
+import getArtistTitle = require('get-artist-title');
 import SoundCloudClient, { TrackResource } from './Client';
 
 const PAGE_SIZE = 50;

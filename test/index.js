@@ -3,7 +3,7 @@ const tape = require('tape');
 const nock = require('nock');
 const path = require('path');
 const fs = require('fs');
-const soundCloudSource = require('../');
+const soundCloudSource = require('..');
 
 const test = promisifyTape(tape);
 

@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "module": "es2015",
+    "module": "CommonJS",
     "target": "es2020",
     "moduleResolution": "Node",
     "newLine": "lf",
     "strict": true,
     "declaration": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "outDir": "dist"
   },
   "include": [
     "src/*.ts"
