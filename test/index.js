@@ -28,7 +28,12 @@ test('searching for videos', async (t) => {
   const src = createSource();
 
   nock(API_HOST).get('/tracks')
-    .query(true)
+    .query({
+      q: 'oceanfromtheblue',
+      client_id: FAKE_KEY,
+      offset: 0,
+      limit: 50,
+    })
     .replyWithFile(200, fixture('search'));
 
   const results = await src.search('oceanfromtheblue');
@@ -47,7 +52,10 @@ test('get videos by id', async (t) => {
   const src = createSource();
 
   nock(API_HOST).get('/tracks')
-    .query(true)
+    .query({
+      client_id: FAKE_KEY,
+      ids: '389870604,346713308',
+    })
     .reply(200, () => [
       JSON.parse(fs.readFileSync(fixture('track.389870604'), 'utf8')),
       JSON.parse(fs.readFileSync(fixture('track.346713308'), 'utf8')),

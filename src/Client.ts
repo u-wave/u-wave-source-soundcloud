@@ -69,7 +69,7 @@ export default class SoundCloudClient {
     return this.get('/tracks', {
       q: options.q,
       offset: options.offset.toString(),
-      limit: options.offset.toString(),
+      limit: options.limit.toString(),
     });
   }
 
