@@ -70,3 +70,25 @@ test('get videos by id', async (t) => {
 
   t.end();
 });
+
+test('missing authentication', async (t) => {
+  const src = createSource();
+
+  nock(API_HOST).get('/tracks')
+    .query({
+      client_id: FAKE_KEY,
+      ids: '389870604,346713308',
+    })
+    .reply(401, () => {
+      return JSON.parse(fs.readFileSync(fixture('401'), 'utf8'));
+    });
+
+  try {
+    await src.get(['389870604', '346713308']);
+  } catch (error) {
+    t.ok(error.message.includes('A request must contain the Authorization header'));
+    return t.end();
+  }
+
+  t.fail('expected error');
+});

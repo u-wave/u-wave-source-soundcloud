@@ -1,0 +1,12 @@
+{
+  "code": 401,
+  "message": "A request must contain the Authorization header. For details please refer to https://developers.soundcloud.com/blog/security-updates-api.",
+  "link": "https://developers.soundcloud.com/docs/api/explorer/open-api",
+  "status": "401 - Unauthorized",
+  "errors": [
+    {
+      "error_message": "A request must contain the Authorization header. For details please refer to https://developers.soundcloud.com/blog/security-updates-api."
+    }
+  ],
+  "error": null
+}
