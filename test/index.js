@@ -1,11 +1,10 @@
-const promisifyTape = require('tape-promise').default;
-const tape = require('tape');
+'use strict';
+
+const assert = require('assert').strict;
 const nock = require('nock');
 const path = require('path');
 const fs = require('fs');
 const soundCloudSource = require('..');
-
-const test = promisifyTape(tape);
 
 const FAKE_V1_KEY = 'da5ad14e8278aedac18ba470373c7634';
 const FAKE_V2_KEY = 'YxQYlFPNletSMSZ4b8Svv9FTYgbNbM79';
@@ -19,8 +18,8 @@ const API_V2_HOST = 'https://api-v2.soundcloud.com';
 
 const fixture = (name) => path.join(__dirname, 'responses', `${name}.json`);
 
-test('v1', ({ test }) => {
-  test('searching for videos', async (t) => {
+describe('v1', () => {
+  it('searching for videos', async () => {
     const src = createSourceV1();
 
     nock(API_V1_HOST).get('/tracks')
@@ -35,17 +34,15 @@ test('v1', ({ test }) => {
     const results = await src.search('oceanfromtheblue');
 
     // Limit is 50 but the results fixture only contains 10 :)
-    t.is(results.length, 10);
+    assert.equal(results.length, 10);
 
     results.forEach((item) => {
-      t.true('artist' in item);
-      t.true('title' in item);
+      assert.ok('artist' in item);
+      assert.ok('title' in item);
     });
-
-    t.end();
   });
 
-  test('get videos by id', async (t) => {
+  it('get videos by id', async () => {
     const src = createSourceV1();
 
     nock(API_V1_HOST).get('/tracks')
@@ -60,15 +57,13 @@ test('v1', ({ test }) => {
 
     const items = await src.get(['389870604', '346713308']);
 
-    t.is(items.length, 2);
+    assert.equal(items.length, 2);
 
-    t.is(items[0].artist, 'oceanfromtheblue(오션)');
-    t.is(items[1].artist, 'slchld');
-
-    t.end();
+    assert.equal(items[0].artist, 'oceanfromtheblue(오션)');
+    assert.equal(items[1].artist, 'slchld');
   });
 
-  test('missing authentication', async (t) => {
+  it('missing authentication', async () => {
     const src = createSourceV1();
 
     nock(API_V1_HOST).get('/tracks')
@@ -80,19 +75,12 @@ test('v1', ({ test }) => {
         return JSON.parse(fs.readFileSync(fixture('401'), 'utf8'));
       });
 
-    try {
-      await src.get(['389870604', '346713308']);
-    } catch (error) {
-      t.ok(error.message.includes('A request must contain the Authorization header'));
-      return t.end();
-    }
-
-    t.fail('expected error');
+    await assert.rejects(() => src.get(['389870604', '346713308']), /A request must contain the Authorization header/);
   });
 });
 
-test('v2', ({ test }) => {
-  test('searching for videos', async (t) => {
+describe('v2', () => {
+  it('searching for videos', async () => {
     nock(WEB_HOST)
       .get('/discover').reply(200, '<script crossorigin src="/fake.js"></script>')
       .get('/fake.js').reply(200, `({client_id:"${FAKE_V2_KEY}"})`);
@@ -109,13 +97,11 @@ test('v2', ({ test }) => {
     const results = await src.search('oceanfromtheblue');
 
     // Limit is 50 but the results fixture only contains 20 :)
-    t.is(results.length, 20);
+    assert.equal(results.length, 20);
 
     results.forEach((item) => {
-      t.true('artist' in item);
-      t.true('title' in item);
+      assert.ok('artist' in item);
+      assert.ok('title' in item);
     });
-
-    t.end();
   });
 });

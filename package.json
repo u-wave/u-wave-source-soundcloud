@@ -25,14 +25,14 @@
   "devDependencies": {
     "@types/http-errors": "^1.8.1",
     "@types/node-fetch": "^2.5.4",
+    "mocha": "^9.1.3",
     "nock": "^13.0.0",
-    "tape": "^5.0.0",
-    "tape-promise": "^4.0.0",
     "typescript": "^4.0.2"
   },
   "scripts": {
     "prepare": "npm run build",
-    "test": "npm run build && node test",
+    "tests-only": "mocha test",
+    "test": "npm run build && npm run tests-only",
     "build": "tsc"
   }
 }
