@@ -1,5 +1,4 @@
-import { URL } from 'url';
-import httpErrors from 'http-errors';
+import * as httpErrors from 'http-errors';
 import fetch from 'node-fetch';
 
 export type ResolveTrackOptions = {

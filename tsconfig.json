@@ -6,7 +6,6 @@
     "newLine": "lf",
     "strict": true,
     "declaration": true,
-    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "outDir": "dist"
   },
