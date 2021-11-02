@@ -20,7 +20,7 @@
   "dependencies": {
     "get-artist-title": "^1.2.0",
     "http-errors": "^1.8.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^3.0.0"
   },
   "devDependencies": {
     "@types/http-errors": "^1.8.1",
