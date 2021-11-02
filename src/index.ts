@@ -61,35 +61,60 @@ export type SoundCloudOptions = {
   key: string,
 };
 
-export default function soundCloudSource(_: unknown, opts: SoundCloudOptions) {
-  const client: SoundCloudClient = opts?.key
-    ? new SoundCloudV1Client({ client_id: opts.key })
-    : new SoundCloudV2Client()
+const schema = {
+  title: 'SoundCloud',
+  'uw:key': 'source:soundcloud',
+  properties: {
+    key: {
+      type: 'string',
+      title: 'SoundCloud API Key',
+      description: "If you don't have an API key, the source should still work, but may be a little less stable.",
+    },
+  },
+};
 
-  async function resolve(url: string) {
-    const body = await client.resolveTrack({ url });
+function sortSourceIDsAndURLs(list: string[]): { urls: string[], sourceIDs: string[] } {
+  const urls: string[] = [];
+  const sourceIDs: string[] = [];
+  list.forEach((item) => {
+    if (/^https?:/.test(item)) {
+      urls.push(item);
+    } else {
+      sourceIDs.push(item);
+    }
+  });
+  return { urls, sourceIDs };
+}
+
+export default class SoundCloudSource {
+  static sourceName = 'soundcloud';
+
+  static schema = schema;
+
+  static api = 3;
+
+  #options: { key?: string };
+
+  #client: SoundCloudClient;
+
+  constructor(opts: { key?: string }) {
+    this.#options = opts;
+    this.#client = this.#options?.key
+      ? new SoundCloudV1Client({ client_id: this.#options.key })
+      : new SoundCloudV2Client();
+  }
+
+  async #resolve(url: string) {
+    const body = await this.#client.resolveTrack({ url });
     return body ? normalizeMedia(body) : null;
   }
 
-  function sortSourceIDsAndURLs(list: string[]): { urls: string[], sourceIDs: string[] } {
-    const urls: string[] = [];
-    const sourceIDs: string[] = [];
-    list.forEach((item) => {
-      if (/^https?:/.test(item)) {
-        urls.push(item);
-      } else {
-        sourceIDs.push(item);
-      }
-    });
-    return { urls, sourceIDs };
-  }
-
-  async function get(context: SourceContext, sourceIDsAndURLs: string[]): Promise<UwMedia[]> {
+  async get(context: SourceContext, sourceIDsAndURLs: string[]): Promise<UwMedia[]> {
     const { urls, sourceIDs } = sortSourceIDsAndURLs(sourceIDsAndURLs);
 
     // Use the `/resolve` endpoint when items are added by their URL.
-    const urlsPromise = Promise.all(urls.map(resolve));
-    const sourceIDsPromise = client.getTracks({ ids: sourceIDs.join(',') });
+    const urlsPromise = Promise.all(urls.map((url) => this.#resolve(url)));
+    const sourceIDsPromise = this.#client.getTracks({ ids: sourceIDs.join(',') });
 
     const [urlItems, sourceIDItems] = await Promise.all([urlsPromise, sourceIDsPromise]);
 
@@ -111,13 +136,13 @@ export default function soundCloudSource(_: unknown, opts: SoundCloudOptions) {
       .filter((item) => item != null);
   }
 
-  async function search(context: SourceContext, query: string, offset = 0): Promise<UwMedia[]> {
+  async search(context: SourceContext, query: string, offset = 0): Promise<UwMedia[]> {
     if (/^https?:\/\/(api\.)?soundcloud\.com\//.test(query)) {
-      const track = await resolve(query);
+      const track = await this.#resolve(query);
       return track ? [track] : [];
     }
 
-    const results = await client.search({
+    const results = await this.#client.search({
       offset,
       q: query,
       limit: PAGE_SIZE,
@@ -126,15 +151,15 @@ export default function soundCloudSource(_: unknown, opts: SoundCloudOptions) {
     return results.map(normalizeMedia);
   }
 
-  async function play(context: SourceContext, entry: UwMedia): Promise<PlayData | null> {
-    const track = await client.getTrack({ track_id: entry.sourceID });
+  async play(context: SourceContext, entry: UwMedia): Promise<PlayData | null> {
+    const track = await this.#client.getTrack({ track_id: entry.sourceID });
     if (!track) {
       return null;
     }
 
     let streamUrl = track.stream_url ?? null;
-    if (client instanceof SoundCloudV2Client) {
-      streamUrl = await client.getStreamUrl(track);
+    if (this.#client instanceof SoundCloudV2Client) {
+      streamUrl = await this.#client.getStreamUrl(track);
     }
 
     if (!streamUrl) {
@@ -143,12 +168,4 @@ export default function soundCloudSource(_: unknown, opts: SoundCloudOptions) {
 
     return { streamUrl };
   }
-
-  return {
-    api: 2,
-    name: 'soundcloud',
-    search,
-    get,
-    play,
-  };
 }
