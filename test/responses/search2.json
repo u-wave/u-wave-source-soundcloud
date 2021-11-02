@@ -1,0 +1,2718 @@
+{
+  "collection": [
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-zPmE8dydknATOQnQ-bHQ8Xg-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 225,
+      "created_at": "2021-07-28T08:05:31Z",
+      "description": "[lyrics]\nthat's mr. what's-it-to-ya, and he knows everything\nhe'll ask you where you're going, he won't ask where you've been\nwell, i've been in the forest\ni'm not sure where to go\nbeen thinking about taking a walk and lying in the snow\n\ntake your eyes off the wheel\nlook at me time and time again, didn't you know that?\ni was never one of your friends\nit's upsetting so quickly, dialing numbers on my phone (you)\nmight die while in the moment, but nobody really lost you\n\nthat's mr. what's-it-to-ya, and he knows everything\nhe'll ask you where you're going, he won't ask where you've been\nso when your wallet's empty, he might lend you a hand\nso when you get lost, regret the time you spent\n\nthat's not the plan, i'm just praying i don't lose my head\ni'll end up dead and i'll promise i'll be back by ten\nmy face turns red\nget out the car with something that i kept, but you know\n\nit's almost a story, i ripped out the pages (i ripped out some pages)\ntheir life was so boring, they moved somewhere vacant (they moved somewhere, fake it)\nthey must be so worried, all about their baby\ni'm your little baby (that's what you said to me)\n\nwhat's it gonna take to get away?\nyou feel this way, don't even care how late it is\nwhat entered your head to make you this way?\nyou feel this way, do you even care for your safety?\n\njust keep walking down the road, nobody's gonna call you\nthe truck nearly hit me, but it wasn't out of luck: \"you...\"\nthe sun's setting so quickly, dialing numbers on my phone (you)\nmight die while in the moment, but nobody really lost you\n\nthat's not the plan, i'm just praying i don't lose my head\ni'll end up dead and i'll promise i'll be back by ten\nmy face turns red\nget out the car with something that i kept, but you know",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 298214,
+      "full_duration": 298214,
+      "embeddable_by": "all",
+      "genre": "",
+      "has_downloads_left": false,
+      "id": 1095513373,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-25T18:58:18Z",
+      "license": "all-rights-reserved",
+      "likes_count": 2135,
+      "permalink": "search-party",
+      "permalink_url": "https://soundcloud.com/dltzk/search-party",
+      "playback_count": 38368,
+      "public": true,
+      "publisher_metadata": {
+        "id": 1095513373,
+        "urn": "soundcloud:tracks:1095513373",
+        "artist": "dltzk",
+        "contains_music": true,
+        "isrc": "QZHZD2129355"
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 285,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "",
+      "title": "search party",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/1095513373",
+      "urn": "soundcloud:tracks:1095513373",
+      "user_id": 603043044,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/hq6oSTwsq3gr_m.json",
+      "display_date": "2021-10-13T04:00:27Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1095513373/83335adc-d6d0-4036-9b81-e02f675b7697/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 298214,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1095513373/83335adc-d6d0-4036-9b81-e02f675b7697/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 298214,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1095513373/e2927fd4-7972-42b1-bba9-0ba9bd1c5018/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 298188,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:1095513373",
+      "station_permalink": "track-stations:1095513373",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6IjEwMTBiMDBiLTBhMDgtNGM2OC05YzNjLTYwZGI0MDQ5N2M4YSIsImlhdCI6MTYzNTg0NjE1OH0.5Btlvn0fbfTEfRpAOXyYOuG5mXGgiq1WBqHWIrkpCjk",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-ZDFZmBVyiSrP5vIz-ylZuWg-large.jpg",
+        "city": "",
+        "comments_count": 311,
+        "country_code": null,
+        "created_at": "2019-03-11T21:01:00Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "Frailty (album) november 12th, 2021",
+        "followers_count": 8802,
+        "followings_count": 121,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 603043044,
+        "kind": "user",
+        "last_modified": "2021-10-25T02:39:19Z",
+        "last_name": "",
+        "likes_count": 1301,
+        "playlist_likes_count": 54,
+        "permalink": "dltzk",
+        "permalink_url": "https://soundcloud.com/dltzk",
+        "playlist_count": 1,
+        "reposts_count": null,
+        "track_count": 31,
+        "uri": "https://api.soundcloud.com/users/603043044",
+        "urn": "soundcloud:users:603043044",
+        "username": "dltzk",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:603043044",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:147777237",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000603043044-F69oFf-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:603043044",
+        "station_permalink": "artist-stations:603043044"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-2VJTpAA0DO2AHgWl-hq2Giw-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 493,
+      "created_at": "2021-01-24T09:17:55Z",
+      "description": "featuring and co-prod @kmoethekid\nmeow synth was inspired by the song \"love 2 you\" by @acounta\n\n[lyrics]\ndont talk shit about me\nu know it makes me mad and it comes back to bite you in the ass\nand i feel so surrounded by all these pebbles covering a mountain\ndont talk shit about me\nu know it makes me mad and it comes back to bite you in the ass\nand i feel so surrounded by all these pebbles covering a mountain\n\nim at my limit no i cant take it\nstay out of my business why can u just listen\nmy head is hurting constant inverting\ni just fall silent when it starts to hurt x5\n\nu get excluded like a private vc i thought we were besties\nits the 31st we talk on the 16th x2\nu get excluded in the private vc i thought we were besties\nits the 31st we talk on the 16th x2",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 145215,
+      "full_duration": 145215,
+      "embeddable_by": "all",
+      "genre": "2/8",
+      "has_downloads_left": false,
+      "id": 971617264,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-11-02T01:22:59Z",
+      "license": "cc-by-nd",
+      "likes_count": 6685,
+      "permalink": "homeswitcher",
+      "permalink_url": "https://soundcloud.com/dltzk/homeswitcher",
+      "playback_count": 232592,
+      "public": true,
+      "publisher_metadata": {
+        "id": 971617264,
+        "urn": "soundcloud:tracks:971617264",
+        "artist": "dltzk",
+        "contains_music": true,
+        "isrc": "QM8DG2174113",
+        "explicit": true
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 524,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "",
+      "title": "homeswitcher w/ kmoe",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/971617264",
+      "urn": "soundcloud:tracks:971617264",
+      "user_id": 603043044,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/4zWMgLHgBoum_m.json",
+      "display_date": "2021-02-26T05:00:02Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:971617264/5a4e0792-e397-4e0b-9dec-172d67edbef2/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 145215,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:971617264/5a4e0792-e397-4e0b-9dec-172d67edbef2/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 145215,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:971617264/01428220-ff25-47a9-89a8-5d122c7f1567/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 145190,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:971617264",
+      "station_permalink": "track-stations:971617264",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6ImE4NjliYzQ1LTcyZjQtNDYzNC04N2M0LWYzNmE3NjU5YTI3YiIsImlhdCI6MTYzNTg0NjE1OH0.hgUM6IxZ5yl7nQzlrJzhMKNJ7C9aIKTNOvo-bE0OpC0",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-ZDFZmBVyiSrP5vIz-ylZuWg-large.jpg",
+        "city": "",
+        "comments_count": 311,
+        "country_code": null,
+        "created_at": "2019-03-11T21:01:00Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "Frailty (album) november 12th, 2021",
+        "followers_count": 8802,
+        "followings_count": 121,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 603043044,
+        "kind": "user",
+        "last_modified": "2021-10-25T02:39:19Z",
+        "last_name": "",
+        "likes_count": 1301,
+        "playlist_likes_count": 54,
+        "permalink": "dltzk",
+        "permalink_url": "https://soundcloud.com/dltzk",
+        "playlist_count": 1,
+        "reposts_count": null,
+        "track_count": 31,
+        "uri": "https://api.soundcloud.com/users/603043044",
+        "urn": "soundcloud:users:603043044",
+        "username": "dltzk",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:603043044",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:147777237",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000603043044-F69oFf-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:603043044",
+        "station_permalink": "artist-stations:603043044"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-9yCcY7HMhZS3TOiw-2STEGA-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 334,
+      "created_at": "2020-06-12T06:01:51Z",
+      "description": "w/ @heartstopmiami & @sammythe33rd\nprod. me",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 151615,
+      "full_duration": 151615,
+      "embeddable_by": "all",
+      "genre": "stop streaming this fucking song",
+      "has_downloads_left": false,
+      "id": 838705021,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-29T12:15:47Z",
+      "license": "all-rights-reserved",
+      "likes_count": 5263,
+      "permalink": "total-drama",
+      "permalink_url": "https://soundcloud.com/dltzk/total-drama",
+      "playback_count": 310731,
+      "public": true,
+      "publisher_metadata": {
+        "id": 838705021,
+        "urn": "soundcloud:tracks:838705021",
+        "artist": "high zoey",
+        "contains_music": true,
+        "isrc": "QZHZD2063312"
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 222,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "\"dont we look cute together\" \"total drama\"",
+      "title": "totaldrama w/ heartstopmiami & sammy33",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/838705021",
+      "urn": "soundcloud:tracks:838705021",
+      "user_id": 603043044,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/adZHwKSoVIV1_m.json",
+      "display_date": "2020-06-14T05:00:00Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:838705021/508970c3-16c1-4e24-a85f-a47855b69eca/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 151615,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:838705021/508970c3-16c1-4e24-a85f-a47855b69eca/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 151615,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:838705021/d9e45624-821a-493c-91da-268306f48e51/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 151589,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:838705021",
+      "station_permalink": "track-stations:838705021",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6ImE1ZjNhNzQ5LWQ3OTItNDJiZC04ZWQxLTQxNjRmOTcyM2M4MSIsImlhdCI6MTYzNTg0NjE1OH0.SDmVUhRxcET6PMQIaTsay_gITEuMyh1FYKJilEwysrY",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-ZDFZmBVyiSrP5vIz-ylZuWg-large.jpg",
+        "city": "",
+        "comments_count": 311,
+        "country_code": null,
+        "created_at": "2019-03-11T21:01:00Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "Frailty (album) november 12th, 2021",
+        "followers_count": 8802,
+        "followings_count": 121,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 603043044,
+        "kind": "user",
+        "last_modified": "2021-10-25T02:39:19Z",
+        "last_name": "",
+        "likes_count": 1301,
+        "playlist_likes_count": 54,
+        "permalink": "dltzk",
+        "permalink_url": "https://soundcloud.com/dltzk",
+        "playlist_count": 1,
+        "reposts_count": null,
+        "track_count": 31,
+        "uri": "https://api.soundcloud.com/users/603043044",
+        "urn": "soundcloud:users:603043044",
+        "username": "dltzk",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:603043044",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:147777237",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000603043044-F69oFf-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:603043044",
+        "station_permalink": "artist-stations:603043044"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-fc6mVd2oA9MoFyxy-R1YQgA-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": null,
+      "created_at": "2021-01-29T16:55:22Z",
+      "description": "showstopper\n@tropes777\n@dltzk",
+      "downloadable": false,
+      "download_count": null,
+      "duration": 150439,
+      "full_duration": 150439,
+      "embeddable_by": "all",
+      "genre": "whopper",
+      "has_downloads_left": false,
+      "id": 975229438,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-24T18:25:53Z",
+      "license": "all-rights-reserved",
+      "likes_count": null,
+      "permalink": "professionals-ft-tropes-dltzk",
+      "permalink_url": "https://soundcloud.com/prodpitfall/professionals-ft-tropes-dltzk",
+      "playback_count": null,
+      "public": true,
+      "publisher_metadata": {
+        "id": 975229438,
+        "urn": "soundcloud:tracks:975229438",
+        "artist": "pitfall",
+        "contains_music": true,
+        "isrc": "QM8DG2187778",
+        "release_title": ""
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 0,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "pitfall tropes dltzk Solo",
+      "title": "professionals ft tropes (dltzk)",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/975229438",
+      "urn": "soundcloud:tracks:975229438",
+      "user_id": 180903938,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/S3ikZzaV8GE5_m.json",
+      "display_date": "2021-01-29T16:55:22Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:975229438/310f75dc-11d9-42f0-aefb-a8de2cec2d30/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 150439,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:975229438/310f75dc-11d9-42f0-aefb-a8de2cec2d30/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 150439,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:975229438/e927b9ac-3ccb-4c1a-b051-886681f01e6d/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 150396,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:975229438",
+      "station_permalink": "track-stations:975229438",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6ImJiMGM1MWU4LTNiNzAtNDA1ZS1iYTY1LTQ0MDAzYzlmZjVlMSIsImlhdCI6MTYzNTg0NjE1OH0.TKc5tGxyHqhdSbYjr41Kk_VjGKpRl_o8oBUlIJVTB6k",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-Pvcoy6I3EZOIeVtD-palefQ-large.jpg",
+        "city": "toronto",
+        "comments_count": 333,
+        "country_code": null,
+        "created_at": "2015-10-16T00:48:57Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "",
+        "followers_count": 8040,
+        "followings_count": 28,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 180903938,
+        "kind": "user",
+        "last_modified": "2021-10-18T14:15:15Z",
+        "last_name": "",
+        "likes_count": 2044,
+        "playlist_likes_count": 79,
+        "permalink": "prodpitfall",
+        "permalink_url": "https://soundcloud.com/prodpitfall",
+        "playlist_count": 0,
+        "reposts_count": null,
+        "track_count": 12,
+        "uri": "https://api.soundcloud.com/users/180903938",
+        "urn": "soundcloud:users:180903938",
+        "username": "pitfall",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:180903938",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:130092348",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000180903938-QsEO9D-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:180903938",
+        "station_permalink": "artist-stations:180903938"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-FVGFtTlwlC3ttmZI-cXE1Dg-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 289,
+      "created_at": "2021-01-12T19:29:48Z",
+      "description": "Musical downward spiral",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 201430,
+      "full_duration": 201430,
+      "embeddable_by": "all",
+      "genre": "3/8",
+      "has_downloads_left": false,
+      "id": 964364260,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-26T03:46:25Z",
+      "license": "cc-by",
+      "likes_count": 4015,
+      "permalink": "52-blue-mondays",
+      "permalink_url": "https://soundcloud.com/dltzk/52-blue-mondays",
+      "playback_count": 133593,
+      "public": true,
+      "publisher_metadata": {
+        "id": 964364260,
+        "urn": "soundcloud:tracks:964364260",
+        "artist": "dltzk",
+        "contains_music": true,
+        "isrc": "QM8DG2143870"
+      },
+      "purchase_title": null,
+      "purchase_url": "https://distrokid.com/hyperfollow/highzoey1/52-blue-mondays",
+      "release_date": null,
+      "reposts_count": 347,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "",
+      "title": "52 blue mondays",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/964364260",
+      "urn": "soundcloud:tracks:964364260",
+      "user_id": 603043044,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/9Esb9jHumilK_m.json",
+      "display_date": "2021-01-22T00:00:18Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:964364260/3f9844cf-5aca-4d87-8a6c-373dcea243ca/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 201430,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:964364260/3f9844cf-5aca-4d87-8a6c-373dcea243ca/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 201430,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:964364260/f04ef3a2-1e58-47b5-b7c7-d68cce56887f/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 201385,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:964364260",
+      "station_permalink": "track-stations:964364260",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6Ijk1NzFjMWM4LWRjYjYtNDEyZi1hNjE1LTIzMjA0N2I2N2RkMyIsImlhdCI6MTYzNTg0NjE1OH0.UlWBkJZYsUuriXHMOboO8YlkZ9rctlrUNHAnK2sOii0",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-ZDFZmBVyiSrP5vIz-ylZuWg-large.jpg",
+        "city": "",
+        "comments_count": 311,
+        "country_code": null,
+        "created_at": "2019-03-11T21:01:00Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "Frailty (album) november 12th, 2021",
+        "followers_count": 8802,
+        "followings_count": 121,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 603043044,
+        "kind": "user",
+        "last_modified": "2021-10-25T02:39:19Z",
+        "last_name": "",
+        "likes_count": 1301,
+        "playlist_likes_count": 54,
+        "permalink": "dltzk",
+        "permalink_url": "https://soundcloud.com/dltzk",
+        "playlist_count": 1,
+        "reposts_count": null,
+        "track_count": 31,
+        "uri": "https://api.soundcloud.com/users/603043044",
+        "urn": "soundcloud:users:603043044",
+        "username": "dltzk",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:603043044",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:147777237",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000603043044-F69oFf-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:603043044",
+        "station_permalink": "artist-stations:603043044"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-hU1zdqreyHpGiMiZ-gC8wmw-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 191,
+      "created_at": "2020-11-19T19:36:02Z",
+      "description": "@prodpitfall @dltzk",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 154149,
+      "full_duration": 154149,
+      "embeddable_by": "all",
+      "genre": "planetzero",
+      "has_downloads_left": false,
+      "id": 932417344,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-31T18:09:07Z",
+      "license": "cc-by-nc-sa",
+      "likes_count": 5161,
+      "permalink": "antagonists",
+      "permalink_url": "https://soundcloud.com/tropes777/antagonists",
+      "playback_count": 250409,
+      "public": true,
+      "publisher_metadata": {
+        "id": 932417344,
+        "urn": "soundcloud:tracks:932417344",
+        "artist": "tropes",
+        "contains_music": true,
+        "isrc": "QZJRC2099505"
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 302,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "planetzero graveem1nd tropes \"News & Politics\"",
+      "title": "Antagonists w/ pitfall (dltzk)",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/932417344",
+      "urn": "soundcloud:tracks:932417344",
+      "user_id": 822794338,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/nVAgvtDjNVo2_m.json",
+      "display_date": "2020-11-23T22:00:05Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:932417344/96dc7450-038a-41bc-93e8-6c1b5e49ef99/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 154149,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:932417344/96dc7450-038a-41bc-93e8-6c1b5e49ef99/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 154149,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:932417344/c6daefde-211f-496b-8024-c9d2cbe58284/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 154114,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:932417344",
+      "station_permalink": "track-stations:932417344",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6ImNlYjMyNzU5LTM4MGUtNDdkNy05YWI5LWEzNTIzNGI3MWNhMiIsImlhdCI6MTYzNTg0NjE1OH0.QrHdkaQRDJKxtbrlvVhtQEFevckExjFrwREXeMbjeqA",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-Nv3BwVvUkuSMr0kk-KNSCyQ-large.jpg",
+        "city": "",
+        "comments_count": 456,
+        "country_code": null,
+        "created_at": "2020-05-12T22:44:11Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "Lighten up, we have each other\n\ntropeslavigne@gmail.com",
+        "followers_count": 4201,
+        "followings_count": 79,
+        "first_name": "You don't get lucky twice",
+        "full_name": "You don't get lucky twice",
+        "groups_count": 0,
+        "id": 822794338,
+        "kind": "user",
+        "last_modified": "2021-11-02T06:37:02Z",
+        "last_name": "",
+        "likes_count": 1285,
+        "playlist_likes_count": 3,
+        "permalink": "tropes777",
+        "permalink_url": "https://soundcloud.com/tropes777",
+        "playlist_count": 2,
+        "reposts_count": null,
+        "track_count": 29,
+        "uri": "https://api.soundcloud.com/users/822794338",
+        "urn": "soundcloud:users:822794338",
+        "username": "Tropes",
+        "verified": true,
+        "visuals": null,
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:822794338",
+        "station_permalink": "artist-stations:822794338"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-FVGFtTlwlC3ttmZI-cXE1Dg-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 324,
+      "created_at": "2020-12-08T07:37:07Z",
+      "description": "..a terrible guy, not much you can fix about that\n[https://twitter.com/c0ncernn/status/1331487330788577280?s=20]\nMUSIC BOX MELODY WAS INSPIRED BY @LOULOVEMAIL\n\n[lyrics]\nblue team blue team need their trust in me\nwrong crowd, old feed\nim restless no sleep, i know i hurt u go burn me\nwhats wrong with me\nhead hurts stomach hurts too many thoughts my head bout to burst\nwhy cant i be her she dont like you anyway\n\nshut up bleeeep bury the hatchet they wont like u unless ur acting\nsaw u and acted the changes were drastic\nhis life on a flagpole he want u in a casket\nshut up FAGGOTTTT bury the hatchet they wont like u unless ur acting\nthought u were special shes not even nice to him\n\nfeeling dangerous i might harm it all away\ncant feel it anymore cant go back to yesterday\nthats not me anymore so who r u trying to save\nwhen u got no one to call i wont be there to blame\nfeeling dangerous i might harm it all away\ncant feel it anymore cant go back to yesterday\nthats not me anymore so who r u trying to save\nwhen u got no one to call i wont be there to blame\n\nhmmmmmm hmmmmmm hmmmmmm hmmmmmm\nhmmmmmm hmmmmmm hmmmmmm hmmmmmm lol idk why i put the humming but u get the point lol hope you like it :D:D:D",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 158798,
+      "full_duration": 158798,
+      "embeddable_by": "all",
+      "genre": "7/8",
+      "has_downloads_left": false,
+      "id": 943458103,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-30T22:17:14Z",
+      "license": "cc-by-nd",
+      "likes_count": 3871,
+      "permalink": "wsg16d2012",
+      "permalink_url": "https://soundcloud.com/dltzk/wsg16d2012",
+      "playback_count": 159712,
+      "public": true,
+      "publisher_metadata": {
+        "id": 943458103,
+        "urn": "soundcloud:tracks:943458103",
+        "artist": "dltzk",
+        "contains_music": true,
+        "isrc": "QZNRS2047458",
+        "explicit": true
+      },
+      "purchase_title": null,
+      "purchase_url": "https://distrokid.com/hyperfollow/highzoey1/woodside-gardens-16-december-2012",
+      "release_date": null,
+      "reposts_count": 309,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "\"world on lockdown\" graveem1nd planetzero",
+      "title": "woodside gardens 16 december 2012",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/943458103",
+      "urn": "soundcloud:tracks:943458103",
+      "user_id": 603043044,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/cgy7PGQQNJFD_m.json",
+      "display_date": "2020-12-17T01:00:01Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:943458103/dbe3ccf0-88c4-44e8-9926-82bafc145c32/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 158798,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:943458103/dbe3ccf0-88c4-44e8-9926-82bafc145c32/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 158798,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:943458103/f4628a8a-b06d-494f-9752-871a14a1d2a1/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 158770,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:943458103",
+      "station_permalink": "track-stations:943458103",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6IjI5YjJjMjU2LWJmMDEtNDYyOS1hYWNkLWM1NjZjMDcyNjUxMCIsImlhdCI6MTYzNTg0NjE1OH0.cVlI_zLDAFeUmcAGT7sOgD49V38EcUVB5bsC9UKNUr8",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-ZDFZmBVyiSrP5vIz-ylZuWg-large.jpg",
+        "city": "",
+        "comments_count": 311,
+        "country_code": null,
+        "created_at": "2019-03-11T21:01:00Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "Frailty (album) november 12th, 2021",
+        "followers_count": 8802,
+        "followings_count": 121,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 603043044,
+        "kind": "user",
+        "last_modified": "2021-10-25T02:39:19Z",
+        "last_name": "",
+        "likes_count": 1301,
+        "playlist_likes_count": 54,
+        "permalink": "dltzk",
+        "permalink_url": "https://soundcloud.com/dltzk",
+        "playlist_count": 1,
+        "reposts_count": null,
+        "track_count": 31,
+        "uri": "https://api.soundcloud.com/users/603043044",
+        "urn": "soundcloud:users:603043044",
+        "username": "dltzk",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:603043044",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:147777237",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000603043044-F69oFf-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:603043044",
+        "station_permalink": "artist-stations:603043044"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-ljm1vc1WZt8bPRB0-2yniwA-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 190,
+      "created_at": "2020-09-07T05:28:32Z",
+      "description": "(prod. my little sleep paralysis demon) shoutout @fraxiom for being awesome also shoutout @twikipedia for the opening line",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 168934,
+      "full_duration": 168934,
+      "embeddable_by": "all",
+      "genre": "post-bathroom",
+      "has_downloads_left": false,
+      "id": 889044277,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-09-15T08:52:58Z",
+      "license": "all-rights-reserved",
+      "likes_count": 3384,
+      "permalink": "bagel",
+      "permalink_url": "https://soundcloud.com/dltzk/bagel",
+      "playback_count": 115658,
+      "public": true,
+      "publisher_metadata": {
+        "id": 889044277,
+        "urn": "soundcloud:tracks:889044277",
+        "artist": "dltzk & fraxiom",
+        "contains_music": true,
+        "isrc": "QZJRB2028942",
+        "explicit": true
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 230,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "\"lots of little fun time\" planetzero \"world on lockdown\"",
+      "title": "if you make music.. stop it w/ fraxiom",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/889044277",
+      "urn": "soundcloud:tracks:889044277",
+      "user_id": 603043044,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/8Fu59OltHxC7_m.json",
+      "display_date": "2020-09-25T00:00:07Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:889044277/f76f78af-8288-4d56-aded-aae0024a7875/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 168934,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:889044277/f76f78af-8288-4d56-aded-aae0024a7875/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 168934,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:889044277/00621f23-4450-45d9-8242-2e573211ed1c/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 168899,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:889044277",
+      "station_permalink": "track-stations:889044277",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6IjMzOTFkY2JiLWZjZjktNGEwZS04ZDlmLWU3MjY5ZDZiNjgzNyIsImlhdCI6MTYzNTg0NjE1OH0.erotrvOzA1YXpgE5qIuKh0j4xVOZYo5Zhd0uBjF7nVI",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-ZDFZmBVyiSrP5vIz-ylZuWg-large.jpg",
+        "city": "",
+        "comments_count": 311,
+        "country_code": null,
+        "created_at": "2019-03-11T21:01:00Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "Frailty (album) november 12th, 2021",
+        "followers_count": 8802,
+        "followings_count": 121,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 603043044,
+        "kind": "user",
+        "last_modified": "2021-10-25T02:39:19Z",
+        "last_name": "",
+        "likes_count": 1301,
+        "playlist_likes_count": 54,
+        "permalink": "dltzk",
+        "permalink_url": "https://soundcloud.com/dltzk",
+        "playlist_count": 1,
+        "reposts_count": null,
+        "track_count": 31,
+        "uri": "https://api.soundcloud.com/users/603043044",
+        "urn": "soundcloud:users:603043044",
+        "username": "dltzk",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:603043044",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:147777237",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000603043044-F69oFf-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:603043044",
+        "station_permalink": "artist-stations:603043044"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-uwLzWhbV9dj7lm9C-9lYP9A-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 203,
+      "created_at": "2021-05-17T22:33:02Z",
+      "description": "The same two or three things every day, you've been such a robot... Can you dream while in a coma? Let's hope I don't find out — May 22, 2021\n\nguitar chords inspired by @kurtains\n\n[lyrics]\n\nthe things i'd do to get a good night's sleep, it won't add up to things that you'd say to me\n{1} so i tried every night to clear things out my head\nand if it doesn't work, i'd blame it all on my own bed\n\nthe things i'd do to get a good night's sleep, it won't add up to things that you'd say to me\n{1} so i tried every night to clear things out my head\nto clear things out my head, to clear things out...\n\noh, when's the next time that a superhero saves my town?\n'cause i've been falling for quite a while now\nso i gotta make the best of my aching\noh, how i lie in bed and feel like dying\n\nit's all fun and games 'till you're star of the show\na brave man once told me that i should go..\n\n(instrumental)\n\noh, how i lie in bed and feel like dying\noh, how i lie in bed and feel like dying, die, die, die\noh, how i lie in bed and feel like dying\noh, how i lie in bed and feel like dying\n\nput on my best clothes, i'm going out today, it's nothing so special\none vessel, one body, neglect it, i'm sorry\ni'll take better care of myself, pretend some more",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 221492,
+      "full_duration": 221492,
+      "embeddable_by": "all",
+      "genre": "",
+      "has_downloads_left": false,
+      "id": 1050518272,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-22T14:26:11Z",
+      "license": "all-rights-reserved",
+      "likes_count": 2317,
+      "permalink": "pretender",
+      "permalink_url": "https://soundcloud.com/dltzk/pretender",
+      "playback_count": 57114,
+      "public": true,
+      "publisher_metadata": {
+        "id": 1050518272,
+        "urn": "soundcloud:tracks:1050518272",
+        "artist": "dltzk",
+        "contains_music": true,
+        "isrc": "QZH5E2169522"
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 245,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "",
+      "title": "pretender",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/1050518272",
+      "urn": "soundcloud:tracks:1050518272",
+      "user_id": 603043044,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/wH0OaOUJt3Lv_m.json",
+      "display_date": "2021-08-09T04:00:27Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1050518272/ca704e11-1630-48b8-afa0-1710ecd2a386/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 221492,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1050518272/ca704e11-1630-48b8-afa0-1710ecd2a386/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 221492,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1050518272/bb8e3ed5-3df3-4b3d-8e58-b3d91eeecba6/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 221465,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:1050518272",
+      "station_permalink": "track-stations:1050518272",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6ImEwMTdiYmM1LTk2MDAtNDRmMi1hOThiLTNmYzE4OTZlMWYyYiIsImlhdCI6MTYzNTg0NjE1OH0.dOMSw70H0VBjRiOdsFl4WQSmEEZ4HGLhIKs6mpUAjNA",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-ZDFZmBVyiSrP5vIz-ylZuWg-large.jpg",
+        "city": "",
+        "comments_count": 311,
+        "country_code": null,
+        "created_at": "2019-03-11T21:01:00Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "Frailty (album) november 12th, 2021",
+        "followers_count": 8802,
+        "followings_count": 121,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 603043044,
+        "kind": "user",
+        "last_modified": "2021-10-25T02:39:19Z",
+        "last_name": "",
+        "likes_count": 1301,
+        "playlist_likes_count": 54,
+        "permalink": "dltzk",
+        "permalink_url": "https://soundcloud.com/dltzk",
+        "playlist_count": 1,
+        "reposts_count": null,
+        "track_count": 31,
+        "uri": "https://api.soundcloud.com/users/603043044",
+        "urn": "soundcloud:users:603043044",
+        "username": "dltzk",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:603043044",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:147777237",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000603043044-F69oFf-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:603043044",
+        "station_permalink": "artist-stations:603043044"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-2VJTpAA0DO2AHgWl-hq2Giw-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 233,
+      "created_at": "2020-12-16T00:55:18Z",
+      "description": "SPOTIFY - https://fanlink.to/TnWk\n[This is my last chance......... I have to make it count] (roll the credits)\n\n[lyrics]\n(first part was written in september before i dropped my song w frax)\ni hate everything cos everything hates me too\ndont have many friends so i just sit in my room\ncos i get jealous when my friends do numbers ask myself when its my turn\nlook up to people who are younger but they dont like me so ill adjourn (idk if i used this word right)\nit wont be my turn not today and not ever\na/c off sweating thru my sweater getting mad over tiny letters\nsee the tiny bell and im light as a feather when i go to school what will they say?\nwill they tease me will they go away i wish i blew up like yesterday...\nwish i could escape this shitty place i'll wake up and no ones home\nspent ten hours on the phone\nwent to sleep at 6am wake up at 2pm then do it again know i should change but it wont happen hope my sleep is everlasting\ncos ill turn 17 tomorrow without a clue youre mad at me, im mad at you\nill tally up the days until i turn 17... tomorrow....\ngo to college have a shit time get a job and i wont be happy\nbut if u ask ill say im fine\n\ncandy in the suitcase dont wanna eat right now\ndont wanna hang my coat up just let me keep it on\ni thought it would be fun you could try it if you want\nim hiding all skin you cant make me take it off\nwe're walking to the bus and i wish that we could stop but i was never good at being anything you're not\nits getting really tiring i just wanna be like/with you but you cant even find me so ill never be like you\n\nill never be like you ill never be like you ill never be like you ill never be like you ill never be like you ill never be like you ill never be like you ill never be like you (and it fades out here) i was 14 and thought i had a chance",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 240039,
+      "full_duration": 240039,
+      "embeddable_by": "all",
+      "genre": "8/8",
+      "has_downloads_left": false,
+      "id": 948276802,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-25T01:09:22Z",
+      "license": "all-rights-reserved",
+      "likes_count": 2958,
+      "permalink": "seventeen",
+      "permalink_url": "https://soundcloud.com/dltzk/seventeen",
+      "playback_count": 117479,
+      "public": true,
+      "publisher_metadata": {
+        "id": 948276802,
+        "urn": "soundcloud:tracks:948276802",
+        "artist": "dltzk",
+        "contains_music": true,
+        "isrc": "QZNRS2073342"
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 195,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "",
+      "title": "seventeen",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/948276802",
+      "urn": "soundcloud:tracks:948276802",
+      "user_id": 603043044,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/UtDka8gHY9y2_m.json",
+      "display_date": "2021-02-26T05:00:02Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:948276802/36f35936-5506-4c85-a260-78892933db2b/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 240039,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:948276802/36f35936-5506-4c85-a260-78892933db2b/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 240039,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:948276802/ea980414-a652-4b25-8996-1e17641773ac/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 240007,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:948276802",
+      "station_permalink": "track-stations:948276802",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6IjllMGM0OTk1LTZiNDYtNGY3Ni05YzdjLWU2NTI2ODk4YjJjOCIsImlhdCI6MTYzNTg0NjE1OH0.i5yiQt3WQeUCx9H4Rd0E2YNX57Gh7QltufWot1R7Fhg",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-ZDFZmBVyiSrP5vIz-ylZuWg-large.jpg",
+        "city": "",
+        "comments_count": 311,
+        "country_code": null,
+        "created_at": "2019-03-11T21:01:00Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "Frailty (album) november 12th, 2021",
+        "followers_count": 8802,
+        "followings_count": 121,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 603043044,
+        "kind": "user",
+        "last_modified": "2021-10-25T02:39:19Z",
+        "last_name": "",
+        "likes_count": 1301,
+        "playlist_likes_count": 54,
+        "permalink": "dltzk",
+        "permalink_url": "https://soundcloud.com/dltzk",
+        "playlist_count": 1,
+        "reposts_count": null,
+        "track_count": 31,
+        "uri": "https://api.soundcloud.com/users/603043044",
+        "urn": "soundcloud:users:603043044",
+        "username": "dltzk",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:603043044",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:147777237",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000603043044-F69oFf-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:603043044",
+        "station_permalink": "artist-stations:603043044"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-OqLzOPRVs7ZyIgXf-9vUshA-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 75,
+      "created_at": "2021-03-07T01:54:49Z",
+      "description": "@midwxst\n@dltzk",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 153365,
+      "full_duration": 153365,
+      "embeddable_by": "all",
+      "genre": "graveem1nd",
+      "has_downloads_left": false,
+      "id": 1000115263,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-09-06T17:02:32Z",
+      "license": "all-rights-reserved",
+      "likes_count": 3366,
+      "permalink": "midwxst-dltzk-graveedup-prod-dltzk",
+      "permalink_url": "https://soundcloud.com/graveem1nd/midwxst-dltzk-graveedup-prod-dltzk",
+      "playback_count": 130749,
+      "public": true,
+      "publisher_metadata": {
+        "id": 1000115263,
+        "urn": "soundcloud:tracks:1000115263",
+        "artist": "graveem1nd",
+        "contains_music": true,
+        "isrc": "QZF8N2190729"
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 194,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "",
+      "title": "midwxst + dltzk - ##GraveedUp (prod. dltzk)",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/1000115263",
+      "urn": "soundcloud:tracks:1000115263",
+      "user_id": 826631218,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/wQFPByTlUfYX_m.json",
+      "display_date": "2021-03-07T01:54:49Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1000115263/0a13afa6-50e4-4425-8ad0-bd8d3306d9c6/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 153365,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1000115263/0a13afa6-50e4-4425-8ad0-bd8d3306d9c6/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 153365,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1000115263/aefba77f-8d99-4c41-b676-69658ca0155f/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 153345,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:1000115263",
+      "station_permalink": "track-stations:1000115263",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6Ijg1MDVkYWU1LTQ1OWQtNGRlOS1hODYyLTFiM2I4ODBiY2Y5MCIsImlhdCI6MTYzNTg0NjE1OH0.yDLO634T989UF04gs2j-5GkhM4hHe05kGn9fXPK16Ms",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-QFAUI4sMTSsKxvoo-9tUOBw-large.jpg",
+        "city": null,
+        "comments_count": 6,
+        "country_code": null,
+        "created_at": "2020-05-21T08:31:46Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "roster in following",
+        "followers_count": 2473,
+        "followings_count": 22,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 826631218,
+        "kind": "user",
+        "last_modified": "2021-10-31T21:05:26Z",
+        "last_name": "",
+        "likes_count": 400,
+        "playlist_likes_count": 17,
+        "permalink": "graveem1nd",
+        "permalink_url": "https://soundcloud.com/graveem1nd",
+        "playlist_count": 0,
+        "reposts_count": null,
+        "track_count": 11,
+        "uri": "https://api.soundcloud.com/users/826631218",
+        "urn": "soundcloud:users:826631218",
+        "username": "graveem1nd",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:826631218",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:99098406",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000826631218-hAVDw9-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:826631218",
+        "station_permalink": "artist-stations:826631218"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-GVd1LWVIBSO2UqUz-m7GPTQ-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 244,
+      "created_at": "2021-04-29T04:18:41Z",
+      "description": "[Lyrics]\ndidn't get dressed, but at least i went outside\ndidn't go outside but at least i got dressed\nonce again i forgot to shade between my eyes\ntake a rest stop, lay hours in bed\nheat of the moment, i'm so happy i could die\n\"...those same 'lovely bones' that you wished to be dead?\"\nmy face is red and i just can't stop telling lies\nbecause i'm just as real as your \"dying pet\"\nthe lights will rot and i'm asking myself,\n\"isn't it time yet?\" i caught too many lies\ni fell, i'm breaking the wine set\ni'm too tired but i'll run if you tell me i can try\ni know, i'm too young to die",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 225463,
+      "full_duration": 225463,
+      "embeddable_by": "all",
+      "genre": "",
+      "has_downloads_left": false,
+      "id": 1038848011,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-31T06:44:17Z",
+      "license": "all-rights-reserved",
+      "likes_count": 2641,
+      "permalink": "how-to-lie",
+      "permalink_url": "https://soundcloud.com/dltzk/how-to-lie",
+      "playback_count": 61181,
+      "public": true,
+      "publisher_metadata": {
+        "id": 1038848011,
+        "urn": "soundcloud:tracks:1038848011",
+        "artist": "dltzk",
+        "contains_music": true,
+        "isrc": "QZH5E2125453",
+        "explicit": false
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": "2021-06-18T00:00:00Z",
+      "reposts_count": 266,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "",
+      "title": "how to lie",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/1038848011",
+      "urn": "soundcloud:tracks:1038848011",
+      "user_id": 603043044,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/DbjhX8fdZSXM_m.json",
+      "display_date": "2021-06-23T03:59:59Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1038848011/3d4a234a-8b5f-4d9a-b66d-e35b51781c76/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 225463,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1038848011/3d4a234a-8b5f-4d9a-b66d-e35b51781c76/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 225463,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1038848011/a435abd4-b8be-4466-8e24-fe46b4f65f01/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 225426,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:1038848011",
+      "station_permalink": "track-stations:1038848011",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6ImE1ZGUwMjkxLWEyZTctNDMzNC04Y2NjLWMyMDk4OWFhZmI4YiIsImlhdCI6MTYzNTg0NjE1OH0.wBRwbt4Gvvpu837kIOGf62qciy8Z7-Hn48GSmFxxMRU",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-ZDFZmBVyiSrP5vIz-ylZuWg-large.jpg",
+        "city": "",
+        "comments_count": 311,
+        "country_code": null,
+        "created_at": "2019-03-11T21:01:00Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "Frailty (album) november 12th, 2021",
+        "followers_count": 8802,
+        "followings_count": 121,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 603043044,
+        "kind": "user",
+        "last_modified": "2021-10-25T02:39:19Z",
+        "last_name": "",
+        "likes_count": 1301,
+        "playlist_likes_count": 54,
+        "permalink": "dltzk",
+        "permalink_url": "https://soundcloud.com/dltzk",
+        "playlist_count": 1,
+        "reposts_count": null,
+        "track_count": 31,
+        "uri": "https://api.soundcloud.com/users/603043044",
+        "urn": "soundcloud:users:603043044",
+        "username": "dltzk",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:603043044",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:147777237",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000603043044-F69oFf-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:603043044",
+        "station_permalink": "artist-stations:603043044"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-000607817308-95ymqj-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 181,
+      "created_at": "2019-10-04T23:13:55Z",
+      "description": "HOP FUCK\nHOP IN GET FUCKED \nHOP IN FUCK\nGET GET GET \nHOP IN GET FUCKED\nHOP IN GET FUCKED\nHOP IN GET FUCKED \nHOP IN GET FUCKED\n\nHOPPIN IN N OUT THE CAR BECAUSE IM MOVING LIKE THAT\nAND IF YOU WANNA ACT TOUGH I GOT THIS GAT IN MY JACKET\n1 2 3 4 MY NECK LOOK LIKE FLAMINGO\n1 2 3 4 POP A SHOT AND SAY BINGO\nHOPPIN IN N OUT THE CAR BECAUSE IM MOVING LIKE THAT\nAND IF YOU WANNA ACT TOUGH I GOT THIS GAT IN MY JACKET\n1 2 3 4 MY NECK LOOK LIKE FLAMINGO\n1 2 3 4 POP A SHOT AND SAY BINGO\n\nHALF AND HALF ONE WHITE ONE BLACK \n(BOTH WORLDS)\nRUNNIN ROUND WITH A SHAWTY TIED UP IN THE BACK (IN THE TRUNK)\nOH BITCH I MIGHT SNAP\n(I MIGHT SNAP ON YOU) \nBITCH WATCH HOW I ATTACK \n\nGOT A PILLOW ON THE MUZZLE I MIGHT SNOOZE WHEN I SHOOT\nSPAS 12 THROUGH YO ROOF\nGOT A PILLOW ON THE MUZZLE I MIGHT SNOOZE WHEN I SHOOT \nSPAS BLOW THROUGH YO ROOF\n\nSHAWTY WANNA EAT MY ASS GOT HER JUMPIN IN THE JUNK\nGOT HER JUMPIN IN THE JUNK\nSHAWTY WANNA EAT MY ASS GOT HER JUMPIN IN THE JUNK\nI GOT HER JUMPIN IN THE JUNK\n\nI GOT HER JUMPIN IN THE JUNK\nJUMPIN IN THE JUNK\nI GOT HER JUMPIN IN THE JUNK\nJUMPIN IN THE JUNK\nI GOT HER JUMPIN IN THE JUNK\nJUMPIN IN THE JUNK\nI GOT HER JUMPIN IN THE JUNK\nJUMPIN IN THE JUNK\n\n*DNFJAY SHITTING*",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 116490,
+      "full_duration": 116490,
+      "embeddable_by": "all",
+      "genre": "Country",
+      "has_downloads_left": false,
+      "id": 691194610,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-26T16:04:36Z",
+      "license": "all-rights-reserved",
+      "likes_count": 2445,
+      "permalink": "jumpin-in-the-junk-prod-dltzk",
+      "permalink_url": "https://soundcloud.com/afourteen/jumpin-in-the-junk-prod-dltzk",
+      "playback_count": 151727,
+      "public": true,
+      "publisher_metadata": {
+        "id": 691194610,
+        "urn": "soundcloud:tracks:691194610",
+        "artist": "Afourteen",
+        "contains_music": true,
+        "isrc": "QZJRB1929449"
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 153,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "",
+      "title": "JUMPIN IN THE JUNK (PROD. DLTZK)",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/691194610",
+      "urn": "soundcloud:tracks:691194610",
+      "user_id": 165812122,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/HesfR69cgZiN_m.json",
+      "display_date": "2019-10-04T23:13:55Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:691194610/5f931422-e4eb-4717-bae7-0f90e141f2bb/stream/hls",
+            "preset": "mp3_0_0",
+            "duration": 116490,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:691194610/5f931422-e4eb-4717-bae7-0f90e141f2bb/stream/progressive",
+            "preset": "mp3_0_0",
+            "duration": 116490,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:691194610/a757c0d0-83d6-48da-a577-a477b48d24c7/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 116418,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:691194610",
+      "station_permalink": "track-stations:691194610",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6IjAwYzhhYzYzLTNkZTctNDhlMi04MWQ5LWI3OTgzNDY5MzkzMCIsImlhdCI6MTYzNTg0NjE1OH0.jJ6oCmmw1JXdoji5dHYJjgF_SLgvsDueCBQnS4X1OzA",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-lokQ0twzsQ2alh7c-xzWobw-large.jpg",
+        "city": "SPIDER GANG",
+        "comments_count": 1084,
+        "country_code": null,
+        "created_at": "2015-07-30T22:31:28Z",
+        "creator_subscriptions": [{ "product": { "id": "creator-pro" } }],
+        "creator_subscription": { "product": { "id": "creator-pro" } },
+        "description": "black flamingo",
+        "followers_count": 27922,
+        "followings_count": 25,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 165812122,
+        "kind": "user",
+        "last_modified": "2021-10-18T19:11:54Z",
+        "last_name": "",
+        "likes_count": 783,
+        "playlist_likes_count": 1,
+        "permalink": "afourteen",
+        "permalink_url": "https://soundcloud.com/afourteen",
+        "playlist_count": 6,
+        "reposts_count": null,
+        "track_count": 98,
+        "uri": "https://api.soundcloud.com/users/165812122",
+        "urn": "soundcloud:users:165812122",
+        "username": "Afourteen",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:165812122",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:138816126",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-TrTHK9sXpYJifB1P-zXmKoQ-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": true, "pro_unlimited": false, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:165812122",
+        "station_permalink": "artist-stations:165812122"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-4sGJeAR8T36nxqT1-EWQYaA-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 132,
+      "created_at": "2021-04-24T08:47:42Z",
+      "description": "[EyeNeedAnswers]produced by @dltzk\n\n#Love",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 124500,
+      "full_duration": 124500,
+      "embeddable_by": "all",
+      "genre": "prying eyes",
+      "has_downloads_left": false,
+      "id": 1035793234,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-26T04:46:37Z",
+      "license": "all-rights-reserved",
+      "likes_count": 2955,
+      "permalink": "a-reason-why",
+      "permalink_url": "https://soundcloud.com/tropes777/a-reason-why",
+      "playback_count": 115544,
+      "public": true,
+      "publisher_metadata": {
+        "id": 1035793234,
+        "urn": "soundcloud:tracks:1035793234",
+        "artist": "tropes",
+        "contains_music": true,
+        "isrc": "QZH5E2112887"
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 239,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "",
+      "title": "a reason why (dltzk)",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/1035793234",
+      "urn": "soundcloud:tracks:1035793234",
+      "user_id": 822794338,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/AbBk392AR7p0_m.json",
+      "display_date": "2021-05-05T04:00:00Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1035793234/313121c5-9e3f-4e9e-9b98-b548775ca4d3/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 124500,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1035793234/313121c5-9e3f-4e9e-9b98-b548775ca4d3/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 124500,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1035793234/b6fc89c8-c093-43a1-8095-a5bd215c93ce/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 124464,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:1035793234",
+      "station_permalink": "track-stations:1035793234",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6ImY0MDRjZWYyLWJkNWEtNDY1ZS05N2ExLThmMzJmZGFhZjgyYSIsImlhdCI6MTYzNTg0NjE1OH0.7mWFkKE8Pn8Rshl4LYmePefYtFgRnrT6vTCg2AeznWM",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-Nv3BwVvUkuSMr0kk-KNSCyQ-large.jpg",
+        "city": "",
+        "comments_count": 456,
+        "country_code": null,
+        "created_at": "2020-05-12T22:44:11Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "Lighten up, we have each other\n\ntropeslavigne@gmail.com",
+        "followers_count": 4201,
+        "followings_count": 79,
+        "first_name": "You don't get lucky twice",
+        "full_name": "You don't get lucky twice",
+        "groups_count": 0,
+        "id": 822794338,
+        "kind": "user",
+        "last_modified": "2021-11-02T06:37:02Z",
+        "last_name": "",
+        "likes_count": 1285,
+        "playlist_likes_count": 3,
+        "permalink": "tropes777",
+        "permalink_url": "https://soundcloud.com/tropes777",
+        "playlist_count": 2,
+        "reposts_count": null,
+        "track_count": 29,
+        "uri": "https://api.soundcloud.com/users/822794338",
+        "urn": "soundcloud:users:822794338",
+        "username": "Tropes",
+        "verified": true,
+        "visuals": null,
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:822794338",
+        "station_permalink": "artist-stations:822794338"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-FvqXTmtPiVzMpDZh-yeXkEQ-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 221,
+      "created_at": "2021-07-18T21:03:32Z",
+      "description": "tru story\n\nproduced by zeke [https://soundcloud.com/dltzk]\n\nracin this bitch like mcskillet\ni aint did this in a minute\npop a lil perc to replenish\nbuss on that bitch then im finished\nwhats the chances that i miss, i\ndo not fw that nigga, i\ndo not fw that bitch, im\ntrying not to puke, bitch im in the mall and im sick\nbroke as fuck go move that brick nigga, that tape wasnt shit\ngot the blicky w the switch nigga, make sure u dont get hit\nn i thought that was yo clique nigga, why tf he snitch\njus rolled a opp, another one\ni get the bag n split it up\nmake sure my brudda get him sumn\ndistribute, then i count it up\nu broke then idgaf\ndont talk to me about nun\nu aint een give nun to yo bro\nthats why yo hood weak asf\n\n*shoots up ur hood*\n\nracin this bitch like im-\ndown bitch on go\nwhere that boy went, idk\nif i knew i wouldnt tell\nif i knew u wouldnt kno\ni might send that boy to hell\nn im tryna take his soul, that shit is a grail\nthat bitch suck my soul, that bitch freak as hell\nwe got hella poles, we got hella shells\nis that boy yo bro, we blew his face off, he cant tell\nand that nigga broke i never seen him at the bank\nand i feel like playboi carti bitch i got a brand new tank\nif he talkin all dat shit, imma hit him w the shank\nn i cannot fw him, cus i heard that nigga lame\n\n*shoots up ur hood again*\n\n[https://soundcloud.com/1sillyteam]",
+      "downloadable": true,
+      "download_count": 236,
+      "duration": 121626,
+      "full_duration": 121626,
+      "embeddable_by": "all",
+      "genre": "waltencore",
+      "has_downloads_left": true,
+      "id": 1089876775,
+      "kind": "track",
+      "label_name": "Dreamers",
+      "last_modified": "2021-11-01T20:19:00Z",
+      "license": "all-rights-reserved",
+      "likes_count": 2398,
+      "permalink": "puke",
+      "permalink_url": "https://soundcloud.com/sanriorose/puke",
+      "playback_count": 67078,
+      "public": true,
+      "publisher_metadata": {
+        "id": 1089876775,
+        "urn": "soundcloud:tracks:1089876775",
+        "artist": "d0llywood1, dltzk",
+        "contains_music": true,
+        "isrc": "QZS672157521",
+        "explicit": true,
+        "writer_composer": "dltzk",
+        "release_title": "i almost puked at the mall"
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 223,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "\"the walten files\"",
+      "title": "i almost puked at the mall [dltzk]",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/1089876775",
+      "urn": "soundcloud:tracks:1089876775",
+      "user_id": 264824037,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/3QXO0GFeD3c7_m.json",
+      "display_date": "2021-07-22T22:59:53Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1089876775/072cdd2b-f09f-442b-ab13-efdc78bcef0d/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 121626,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1089876775/072cdd2b-f09f-442b-ab13-efdc78bcef0d/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 121626,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1089876775/427fbdc9-1287-47bf-b31d-ff7e17dc19ba/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 121607,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:1089876775",
+      "station_permalink": "track-stations:1089876775",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6ImUzNjgyYmNmLTZjZjMtNDFkMS04YTBjLTQzOTMyYzg4NGYyZiIsImlhdCI6MTYzNTg0NjE1OH0.t54gWF7ChGJkg9XLQKC2sDzRctvGcuMUWFYEcqfKQqY",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-6uRlu45yCN014ms9-ruAtjw-large.jpg",
+        "city": "louisiana",
+        "comments_count": 1744,
+        "country_code": null,
+        "created_at": "2016-10-29T13:46:15Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "sillyteam helix tears #Glam\nhttps://soundcloud.com/glamorous4life\n\ndollymgmt@gmail.com",
+        "followers_count": 21992,
+        "followings_count": 88,
+        "first_name": "Dreamer",
+        "full_name": "Dreamer",
+        "groups_count": 0,
+        "id": 264824037,
+        "kind": "user",
+        "last_modified": "2021-10-16T21:37:57Z",
+        "last_name": "",
+        "likes_count": 10934,
+        "playlist_likes_count": 460,
+        "permalink": "sanriorose",
+        "permalink_url": "https://soundcloud.com/sanriorose",
+        "playlist_count": 4,
+        "reposts_count": null,
+        "track_count": 45,
+        "uri": "https://api.soundcloud.com/users/264824037",
+        "urn": "soundcloud:users:264824037",
+        "username": "d0llywood1",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:264824037",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:137928549",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-R2BdSLXH6k2dUGz6-6YtxXg-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:264824037",
+        "station_permalink": "artist-stations:264824037"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-IXsEhRSTOOXHAmMo-OuGc7A-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 94,
+      "created_at": "2021-02-19T00:53:40Z",
+      "description": "cover by @4amxx",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 104751,
+      "full_duration": 104751,
+      "embeddable_by": "all",
+      "genre": "",
+      "has_downloads_left": false,
+      "id": 988491100,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-30T22:17:07Z",
+      "license": "all-rights-reserved",
+      "likes_count": 2386,
+      "permalink": "heartu-dltzk",
+      "permalink_url": "https://soundcloud.com/kggn/heartu-dltzk",
+      "playback_count": 77740,
+      "public": true,
+      "publisher_metadata": {
+        "id": 988491100,
+        "urn": "soundcloud:tracks:988491100",
+        "artist": "kuru",
+        "contains_music": true,
+        "isrc": "QZF8N2143967"
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 202,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "dltzk gravee kuru nova helix bh",
+      "title": "heart#U (dltzk)",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/988491100",
+      "urn": "soundcloud:tracks:988491100",
+      "user_id": 217985010,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/EFy8bltOtUD8_m.json",
+      "display_date": "2021-02-19T23:00:15Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:988491100/122bc50c-9722-45ce-bbbc-8404c6bcd390/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 104751,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:988491100/122bc50c-9722-45ce-bbbc-8404c6bcd390/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 104751,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:988491100/5d1a272d-70bf-4f84-b137-0c0b4cfeb34c/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 104730,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:988491100",
+      "station_permalink": "track-stations:988491100",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6IjJkMzBmYTZmLWFmZGQtNDE0OC04MDY3LWNmNzg1NmE3ZTFhZCIsImlhdCI6MTYzNTg0NjE1OH0.h1Dl9oktymIvSDQF3WRAxwlcuMUrQl4GYCpJIwopUgQ",
+      "monetization_model": "NOT_APPLICABLE",
+      "policy": "ALLOW",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-DegUarE0TwBCZnyw-rXHAoQ-large.jpg",
+        "city": "",
+        "comments_count": 944,
+        "country_code": null,
+        "created_at": "2016-04-08T16:32:48Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "stay true",
+        "followers_count": 13070,
+        "followings_count": 65,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 217985010,
+        "kind": "user",
+        "last_modified": "2021-10-20T01:26:16Z",
+        "last_name": "",
+        "likes_count": 8306,
+        "playlist_likes_count": 120,
+        "permalink": "kggn",
+        "permalink_url": "https://soundcloud.com/kggn",
+        "playlist_count": 3,
+        "reposts_count": null,
+        "track_count": 22,
+        "uri": "https://api.soundcloud.com/users/217985010",
+        "urn": "soundcloud:users:217985010",
+        "username": "kuru",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:217985010",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:147361152",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000217985010-u2QDcm-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:217985010",
+        "station_permalink": "artist-stations:217985010"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-cGtZDrtygR5DukAk-SzoumA-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 208,
+      "created_at": "2021-01-23T00:00:04Z",
+      "description": "**** **** ******* * *** **** *** **** **** ******** ** LMAO\n\ntropes https://soundcloud.com/tropes777\nzeke (twin) https://soundcloud.com/dltzk\n\ndolly:\nur in my head like all the time\nur in my head i stop to type\nopen the app ur on my mind\nthats why i got u off the site\n\nparanoid twitter user:\ntweakin\n\ntropes:\ni live rent free inside ur mind\nthey put u down like all tha time\nn i dont get it no more something thats alright\nthey say it twice a day i say it twice a night\n\nu moving up n down w no completion\ni put it on tha desk so u can see it\ni sign ur twitter up for sum deletion\nu movin weird n i dont think u see it\n\nya movin around like im not known\nthey tryna get me for the what tho\nthey tryna block me like wazzo\ni got blocky bodies wazzo\n\nya bitch im winnin like lotto\nbitch im gettin stacks like how tho\ncome on thats alright\nget it twice a night\n\nbitch u follow aint gettin 1 back\ngiv it 1 more minute then run back\ngo head talk yo shitty ass comeback\nya we got ur fundin then cut that\n\n(ya we got ur fundin then cut that)\nlookin for u aint no suspect\nfuck yo internet aint connect\nwell oh well\n\n[sillyteam]",
+      "downloadable": true,
+      "download_count": 494,
+      "duration": 129437,
+      "full_duration": 129437,
+      "embeddable_by": "all",
+      "genre": "silly music",
+      "has_downloads_left": true,
+      "id": 970893235,
+      "kind": "track",
+      "label_name": "Helix Tears",
+      "last_modified": "2021-10-28T22:00:18Z",
+      "license": "all-rights-reserved",
+      "likes_count": 3434,
+      "permalink": "nerd",
+      "permalink_url": "https://soundcloud.com/sanriorose/nerd",
+      "playback_count": 151267,
+      "public": true,
+      "publisher_metadata": {
+        "id": 970893235,
+        "urn": "soundcloud:tracks:970893235",
+        "artist": "d0llywood1, tropes",
+        "contains_music": true,
+        "isrc": "QM42K2187273",
+        "explicit": true,
+        "writer_composer": "dltzk",
+        "release_title": "rent free"
+      },
+      "purchase_title": "instagram",
+      "purchase_url": "https://www.instagram.com/d0llywood1",
+      "release_date": null,
+      "reposts_count": 229,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "twitter",
+      "title": "rent free  😬 w/ tropes [dltzk]",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/970893235",
+      "urn": "soundcloud:tracks:970893235",
+      "user_id": 264824037,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/z0wp44HsBEUD_m.json",
+      "display_date": "2021-01-23T00:00:04Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:970893235/4d47cbea-92df-49e8-b7a5-1eb33f7878cb/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 129437,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:970893235/4d47cbea-92df-49e8-b7a5-1eb33f7878cb/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 129437,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:970893235/888461f3-95ed-49f0-ad55-b61b1f9c08f2/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 129397,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:970893235",
+      "station_permalink": "track-stations:970893235",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6IjZiNjI2OGI2LTYyZTgtNGZlZS05M2YxLTY5NDVlNTk2MmRlMCIsImlhdCI6MTYzNTg0NjE1OH0.WPyRAluTaOtBW-tbp4CjpSTGTsDZrSTVnMy52WRkzJ8",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-6uRlu45yCN014ms9-ruAtjw-large.jpg",
+        "city": "louisiana",
+        "comments_count": 1744,
+        "country_code": null,
+        "created_at": "2016-10-29T13:46:15Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "sillyteam helix tears #Glam\nhttps://soundcloud.com/glamorous4life\n\ndollymgmt@gmail.com",
+        "followers_count": 21992,
+        "followings_count": 88,
+        "first_name": "Dreamer",
+        "full_name": "Dreamer",
+        "groups_count": 0,
+        "id": 264824037,
+        "kind": "user",
+        "last_modified": "2021-10-16T21:37:57Z",
+        "last_name": "",
+        "likes_count": 10934,
+        "playlist_likes_count": 460,
+        "permalink": "sanriorose",
+        "permalink_url": "https://soundcloud.com/sanriorose",
+        "playlist_count": 4,
+        "reposts_count": null,
+        "track_count": 45,
+        "uri": "https://api.soundcloud.com/users/264824037",
+        "urn": "soundcloud:users:264824037",
+        "username": "d0llywood1",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:264824037",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:137928549",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-R2BdSLXH6k2dUGz6-6YtxXg-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:264824037",
+        "station_permalink": "artist-stations:264824037"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-k4Xz1vDlLddcNkJy-cW4MIQ-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 173,
+      "created_at": "2021-03-20T22:07:59Z",
+      "description": "Can you believe it? We made it! [cathartic laughter]\nplease and thank you\n\n[lyrics]\n\nforce-fed your words 'till they turn into mine\nand i'll be what you want 'till you run out of time\nand i'll continue to make you mad 'till i make you spill your wine\n\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\n\npressing soft reset, do whatever it takes to clear my head\ni might let it all go, taking out all my guts before the show\n(i hope nobody knows)\n'cause when i shut off my phone, i act like i never know\nbut i know it's all a lie\nand i'll continue to make you mad 'till i make you spill your wine\n\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\n\nand once you're out of knives\ni'd like you to spend some time with us\nyou can make it if you try, until they say that you don't try hard enough\n\nforce-fed your words 'till they turn into mine\nand i'll be what you want 'till you run out of time\nand i'll continue to make you mad 'till i make you spill your wine\n\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time\ngo through this all the time",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 178573,
+      "full_duration": 178573,
+      "embeddable_by": "all",
+      "genre": "Music",
+      "has_downloads_left": false,
+      "id": 1012045417,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-30T22:17:03Z",
+      "license": "all-rights-reserved",
+      "likes_count": 2201,
+      "permalink": "cycle",
+      "permalink_url": "https://soundcloud.com/dltzk/cycle",
+      "playback_count": 61052,
+      "public": true,
+      "publisher_metadata": {
+        "id": 1012045417,
+        "urn": "soundcloud:tracks:1012045417",
+        "artist": "dltzk",
+        "contains_music": true,
+        "isrc": "QZFP52121525",
+        "explicit": false
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": "2021-05-11T00:00:00Z",
+      "reposts_count": 207,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "",
+      "title": "it's a vicious cycle",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/1012045417",
+      "urn": "soundcloud:tracks:1012045417",
+      "user_id": 603043044,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/gMU3bS2pvQAT_m.json",
+      "display_date": "2021-05-14T04:00:00Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1012045417/4d42e2a4-427e-4e07-91cf-a61dc25519b8/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 178573,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1012045417/4d42e2a4-427e-4e07-91cf-a61dc25519b8/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 178573,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1012045417/edcc0e8f-48f3-4f8d-aaeb-53b6da282dc3/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 178537,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:1012045417",
+      "station_permalink": "track-stations:1012045417",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6IjI3NTZjNjMwLWRiODgtNDczNi04NDk2LTZmZDI4ZmMzODRkNCIsImlhdCI6MTYzNTg0NjE1OH0.tUFjXRRBncBNPMUZIzghgwAR6VTfyyMMOSwiXVRx8D8",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-ZDFZmBVyiSrP5vIz-ylZuWg-large.jpg",
+        "city": "",
+        "comments_count": 311,
+        "country_code": null,
+        "created_at": "2019-03-11T21:01:00Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "Frailty (album) november 12th, 2021",
+        "followers_count": 8802,
+        "followings_count": 121,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 603043044,
+        "kind": "user",
+        "last_modified": "2021-10-25T02:39:19Z",
+        "last_name": "",
+        "likes_count": 1301,
+        "playlist_likes_count": 54,
+        "permalink": "dltzk",
+        "permalink_url": "https://soundcloud.com/dltzk",
+        "playlist_count": 1,
+        "reposts_count": null,
+        "track_count": 31,
+        "uri": "https://api.soundcloud.com/users/603043044",
+        "urn": "soundcloud:users:603043044",
+        "username": "dltzk",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:603043044",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:147777237",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000603043044-F69oFf-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:603043044",
+        "station_permalink": "artist-stations:603043044"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-Epz7aFj7fBNJWovU-uOZzUQ-large.jpg",
+      "caption": "new prod dltzk",
+      "commentable": true,
+      "comment_count": 103,
+      "created_at": "2021-06-15T21:40:45Z",
+      "description": "@dltzk",
+      "downloadable": false,
+      "download_count": 0,
+      "duration": 189127,
+      "full_duration": 189127,
+      "embeddable_by": "all",
+      "genre": "purity",
+      "has_downloads_left": false,
+      "id": 1069208542,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-10-11T06:08:30Z",
+      "license": "all-rights-reserved",
+      "likes_count": 1815,
+      "permalink": "unhappy-ending-dltzk",
+      "permalink_url": "https://soundcloud.com/kggn/unhappy-ending-dltzk",
+      "playback_count": 63068,
+      "public": true,
+      "publisher_metadata": {
+        "id": 1069208542,
+        "urn": "soundcloud:tracks:1069208542",
+        "artist": "kuru",
+        "contains_music": true,
+        "isrc": "QZHNC2150006"
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": null,
+      "reposts_count": 160,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "kuru dltzk helixtears novagang",
+      "title": "unhappy ending (dltzk)",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/1069208542",
+      "urn": "soundcloud:tracks:1069208542",
+      "user_id": 217985010,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/KDimXYaUQSAk_m.json",
+      "display_date": "2021-07-02T19:00:30Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1069208542/df46c3a9-ed07-46ff-b8e9-c5c36282bf8d/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 189127,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1069208542/df46c3a9-ed07-46ff-b8e9-c5c36282bf8d/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 189127,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:1069208542/ae421e1e-db74-4ae4-add4-fc4638fe03a3/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 189100,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:1069208542",
+      "station_permalink": "track-stations:1069208542",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6IjBkMWRlNTE2LTg1MTUtNGFjMy1hNjg0LTNmNTljNGI3Y2ZkZCIsImlhdCI6MTYzNTg0NjE1OH0.QPJ7p4LAyXfF_xGrljbMs25BgVWJ6XkQ-hJ26oLqRA8",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-DegUarE0TwBCZnyw-rXHAoQ-large.jpg",
+        "city": "",
+        "comments_count": 944,
+        "country_code": null,
+        "created_at": "2016-04-08T16:32:48Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "stay true",
+        "followers_count": 13070,
+        "followings_count": 65,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 217985010,
+        "kind": "user",
+        "last_modified": "2021-10-20T01:26:16Z",
+        "last_name": "",
+        "likes_count": 8306,
+        "playlist_likes_count": 120,
+        "permalink": "kggn",
+        "permalink_url": "https://soundcloud.com/kggn",
+        "playlist_count": 3,
+        "reposts_count": null,
+        "track_count": 22,
+        "uri": "https://api.soundcloud.com/users/217985010",
+        "urn": "soundcloud:users:217985010",
+        "username": "kuru",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:217985010",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:147361152",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000217985010-u2QDcm-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:217985010",
+        "station_permalink": "artist-stations:217985010"
+      }
+    },
+    {
+      "artwork_url": "https://i1.sndcdn.com/artworks-LmdVNvdfu6witcyw-5ep74A-large.jpg",
+      "caption": null,
+      "commentable": true,
+      "comment_count": 98,
+      "created_at": "2021-01-31T04:52:25Z",
+      "description": "basically twitterloser but i’m even more mad\n\nproduction: dltzk @dltzk\nmixing & mastering: me & heavn @heavenindaclouds\n\ninstagram: instagram.com/avit69\nyoutube: youtube.com/c/avit69\nstreaming platforms: fanlink.to/AViT69\n\nlyrics:\n\n[verse]\nget out my head\nwish u were dead\nyeah when i bled\nu laughed n stared\nwhile i was down bad\nleft with dread\nwithout a friend \nleft in the end\n\ni’m all alone and i’m ok with that\nas long as u stay way the fuck right back \nyeah baby don’t attempt to come right back\ncuz baby i don’t rlly know ‘bout that\n\n[pre-chorus]\nand even though u been gone from my life so long\nur presence lingers on and on\nand all those scars u left on me\njust make me want to fucking scream\n\n[hook]\ni h8 u! \ndespise u! >:(\nur the reason i’m this way\nsuicidal\ncan’t get up, no\nur the reason i’m this way\ni’m numb to \nthe pain now :/\nur the reason i’m this way\nyour lies and \nyour fake love\nur the reason i’m this way\n\n[verse]\nyeah it’s so hard for me to just pretend \nit’s all ok\nwhen u were close to me, and u just gave my love away \ni trusted u, guess that’s too bad :/\ni shoulda knew, it makes me mad >:(\n\nwell it’s ur loss\nn it’s ur fault \nthat we fell apart\nn u left me to rot \nwhat we had, i laid it to rest\nthose wasted years, i feel regret\n\n[pre-chorus & hook]\n\n[outro w/ 28 ppl :o]",
+      "downloadable": false,
+      "download_count": 7,
+      "duration": 182152,
+      "full_duration": 182152,
+      "embeddable_by": "all",
+      "genre": "pretti boi",
+      "has_downloads_left": false,
+      "id": 976126051,
+      "kind": "track",
+      "label_name": null,
+      "last_modified": "2021-11-01T08:40:42Z",
+      "license": "all-rights-reserved",
+      "likes_count": 2293,
+      "permalink": "utritw",
+      "permalink_url": "https://soundcloud.com/avit69/utritw",
+      "playback_count": 80426,
+      "public": true,
+      "publisher_metadata": {
+        "id": 976126051,
+        "urn": "soundcloud:tracks:976126051",
+        "artist": "AViT",
+        "contains_music": true,
+        "isrc": "QZF8N2115969"
+      },
+      "purchase_title": null,
+      "purchase_url": null,
+      "release_date": "2021-03-05T00:00:00Z",
+      "reposts_count": 169,
+      "secret_token": null,
+      "sharing": "public",
+      "state": "finished",
+      "streamable": true,
+      "tag_list": "avit alternative emo emotional pop electronic",
+      "title": "ur the reason im this way (dltzk)",
+      "track_format": "single-track",
+      "uri": "https://api.soundcloud.com/tracks/976126051",
+      "urn": "soundcloud:tracks:976126051",
+      "user_id": 248235183,
+      "visuals": null,
+      "waveform_url": "https://wave.sndcdn.com/geXkGLhjREwj_m.json",
+      "display_date": "2021-03-05T05:00:32Z",
+      "media": {
+        "transcodings": [
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:976126051/d264de90-e9f0-43c0-b701-857d5fbcdac0/stream/hls",
+            "preset": "mp3_0_1",
+            "duration": 182152,
+            "snipped": false,
+            "format": { "protocol": "hls", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:976126051/d264de90-e9f0-43c0-b701-857d5fbcdac0/stream/progressive",
+            "preset": "mp3_0_1",
+            "duration": 182152,
+            "snipped": false,
+            "format": { "protocol": "progressive", "mime_type": "audio/mpeg" },
+            "quality": "sq"
+          },
+          {
+            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:976126051/1cda0699-c7c8-450d-93c7-3f7744cd4b4b/stream/hls",
+            "preset": "opus_0_0",
+            "duration": 182118,
+            "snipped": false,
+            "format": {
+              "protocol": "hls",
+              "mime_type": "audio/ogg; codecs=\"opus\""
+            },
+            "quality": "sq"
+          }
+        ]
+      },
+      "station_urn": "soundcloud:system-playlists:track-stations:976126051",
+      "station_permalink": "track-stations:976126051",
+      "track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJOTCIsInN1YiI6IiIsInJpZCI6Ijk4OWFmMTc5LWUzYmItNGMzYy04NTYxLTRlODM5NWQ2NjIyMyIsImlhdCI6MTYzNTg0NjE1OH0.n2Tl4li8-AgytVDy8gBQHWvJBni6Qy2qL51GOIG5rXs",
+      "monetization_model": "AD_SUPPORTED",
+      "policy": "MONETIZE",
+      "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-osy1PZplzOPWzUMK-FTmZqQ-large.jpg",
+        "city": "",
+        "comments_count": 155,
+        "country_code": null,
+        "created_at": "2016-08-18T19:43:00Z",
+        "creator_subscriptions": [
+          { "product": { "id": "creator-pro-unlimited" } }
+        ],
+        "creator_subscription": {
+          "product": { "id": "creator-pro-unlimited" }
+        },
+        "description": "hello",
+        "followers_count": 5350,
+        "followings_count": 90,
+        "first_name": "",
+        "full_name": "",
+        "groups_count": 0,
+        "id": 248235183,
+        "kind": "user",
+        "last_modified": "2021-09-15T13:10:36Z",
+        "last_name": "",
+        "likes_count": 2223,
+        "playlist_likes_count": 32,
+        "permalink": "avit69",
+        "permalink_url": "https://soundcloud.com/avit69",
+        "playlist_count": 4,
+        "reposts_count": null,
+        "track_count": 24,
+        "uri": "https://api.soundcloud.com/users/248235183",
+        "urn": "soundcloud:users:248235183",
+        "username": "AViT",
+        "verified": true,
+        "visuals": {
+          "urn": "soundcloud:users:248235183",
+          "enabled": true,
+          "visuals": [
+            {
+              "urn": "soundcloud:visuals:144743028",
+              "entry_time": 0,
+              "visual_url": "https://i1.sndcdn.com/visuals-000248235183-JHQmid-original.jpg"
+            }
+          ],
+          "tracking": null
+        },
+        "badges": { "pro": false, "pro_unlimited": true, "verified": true },
+        "station_urn": "soundcloud:system-playlists:artist-stations:248235183",
+        "station_permalink": "artist-stations:248235183"
+      }
+    }
+  ],
+  "total_results": 942,
+  "facets": [
+    {
+      "name": "genre",
+      "facets": [
+        { "value": "", "count": 283, "filter": "filter.genre_or_tag=" },
+        {
+          "value": "hip-hop & rap",
+          "count": 101,
+          "filter": "filter.genre_or_tag=hip-hop & rap"
+        },
+        {
+          "value": "electronic",
+          "count": 37,
+          "filter": "filter.genre_or_tag=electronic"
+        },
+        {
+          "value": "hyperpop",
+          "count": 33,
+          "filter": "filter.genre_or_tag=hyperpop"
+        },
+        {
+          "value": "alternative rock",
+          "count": 25,
+          "filter": "filter.genre_or_tag=alternative rock"
+        },
+        { "value": "pop", "count": 23, "filter": "filter.genre_or_tag=pop" },
+        { "value": "trap", "count": 19, "filter": "filter.genre_or_tag=trap" },
+        {
+          "value": "dance & edm",
+          "count": 16,
+          "filter": "filter.genre_or_tag=dance & edm"
+        },
+        {
+          "value": "ambient",
+          "count": 14,
+          "filter": "filter.genre_or_tag=ambient"
+        },
+        {
+          "value": "country",
+          "count": 14,
+          "filter": "filter.genre_or_tag=country"
+        }
+      ]
+    }
+  ],
+  "next_href": "https://api-v2.soundcloud.com/search/tracks?query_urn=soundcloud%3Asearch%3Adc6da7b412c2473cb0f688ef8fa76251&facet=genre&sc_a_id=be4d16c395f7faad8920e32fedad0caba36c2b6a&limit=20&variant_ids=&user_id=243355-37716-760460-952158&offset=20&q=dltzk",
+  "query_urn": "soundcloud:search:dc6da7b412c2473cb0f688ef8fa76251"
+}

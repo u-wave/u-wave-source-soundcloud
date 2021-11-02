@@ -19,9 +19,11 @@
   },
   "dependencies": {
     "get-artist-title": "^1.2.0",
+    "http-errors": "^1.8.0",
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
+    "@types/http-errors": "^1.8.1",
     "@types/node-fetch": "^2.5.4",
     "nock": "^13.0.0",
     "tape": "^5.0.0",
