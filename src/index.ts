@@ -1,5 +1,5 @@
 import getArtistTitle = require('get-artist-title');
-import SoundCloudClient, { TrackResource } from './Client';
+import { SoundCloudClient, TrackResource, SoundCloudV1Client, SoundCloudV2Client } from './Client';
 
 const PAGE_SIZE = 50;
 
@@ -57,13 +57,9 @@ export type SoundCloudOptions = {
 };
 
 export default function soundCloudSource(uw: unknown, opts: SoundCloudOptions) {
-  if (!opts || !opts.key) {
-    throw new TypeError('Expected a SoundCloud API key in "options.key". For information on how to '
-      + 'configure your SoundCloud API access, see '
-      + 'https://soundcloud.com/you/apps.');
-  }
-
-  const client = new SoundCloudClient({ client_id: opts.key });
+  const client: SoundCloudClient = opts?.key
+    ? new SoundCloudV1Client({ client_id: opts.key })
+    : new SoundCloudV2Client()
 
   async function resolve(url: string) {
     const body = await client.resolveTrack({ url });
