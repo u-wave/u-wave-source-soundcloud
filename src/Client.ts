@@ -55,7 +55,7 @@ export class SoundCloudV1Client implements SoundCloudClient {
     this.#baseUrl = 'https://api.soundcloud.com';
   }
 
-  private async get(resource: string, options: Record<string, string>) {
+  async #get(resource: string, options: Record<string, string>) {
     const url = new URL(resource, this.#baseUrl);
     for (const [key, value] of Object.entries({ ...this.#params, ...options })) {
       url.searchParams.append(key, value);
@@ -73,7 +73,7 @@ export class SoundCloudV1Client implements SoundCloudClient {
   }
 
   search(options: SearchOptions) {
-    return this.get('/tracks', {
+    return this.#get('/tracks', {
       q: options.q,
       offset: options.offset.toString(),
       limit: options.limit.toString(),
@@ -81,11 +81,11 @@ export class SoundCloudV1Client implements SoundCloudClient {
   }
 
   resolveTrack(options: ResolveTrackOptions): Promise<TrackResource> {
-    return this.get('/resolve', options);
+    return this.#get('/resolve', options);
   }
 
   getTracks(options: GetTracksOptions): Promise<TrackResource[]> {
-    return this.get('/tracks', options);
+    return this.#get('/tracks', options);
   }
 }
 
