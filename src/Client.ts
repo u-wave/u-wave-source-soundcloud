@@ -22,8 +22,8 @@ export interface TrackResource {
     permalink_url: string,
     avatar_url: string,
   };
-  stream_url: string;
-  download_url: string;
+  stream_url?: string;
+  download_url?: string;
 };
 
 export type GetTracksOptions = {

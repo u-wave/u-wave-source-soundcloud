@@ -12,7 +12,7 @@ export interface UwMedia {
   sourceData: {
     fullTitle: string,
     permalinkUrl: string,
-    streamUrl: string,
+    streamUrl?: string,
     artistUrl: string,
     username: string,
   };
@@ -25,7 +25,7 @@ function enlargeThumbnail(thumbnail: string): string | undefined {
 }
 
 function getThumbnailUrl(item: TrackResource): string | undefined {
-  const thumbnail = item.artwork_url || (item.user && item.user.avatar_url);
+  const thumbnail = item.artwork_url ?? item.user?.avatar_url;
 
   return enlargeThumbnail(thumbnail);
 }
@@ -56,7 +56,7 @@ export type SoundCloudOptions = {
   key: string,
 };
 
-export default function soundCloudSource(uw: unknown, opts: SoundCloudOptions) {
+export default function soundCloudSource(_: unknown, opts: SoundCloudOptions) {
   const client: SoundCloudClient = opts?.key
     ? new SoundCloudV1Client({ client_id: opts.key })
     : new SoundCloudV2Client()
@@ -90,7 +90,7 @@ export default function soundCloudSource(uw: unknown, opts: SoundCloudOptions) {
 
     // Ensure the results order is the same as the sourceIDs parameter order.
     // TODO deal with nonexistant source IDs
-    const items: { [key: string]: UwMedia } = {};
+    const items: Record<string, UwMedia> = {};
     urls.forEach((url, index) => {
       const item = urlItems[index];
       items[url] = item;
