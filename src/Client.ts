@@ -22,8 +22,27 @@ export interface TrackResource {
     permalink_url: string,
     avatar_url: string,
   };
+  /** Streaming endpoint from the V1 API.  */
   stream_url?: string;
   download_url?: string;
+  /** Token for streaming URLs from the V2 API.  */
+  track_authorization?: string;
+  /** Descriptions of the streaming URLs from the V2 API. */
+  media?: {
+    transcodings: {
+      url: string,
+      duration: number,
+      format: {
+        protocol: string,
+        mime_type: string,
+      },
+    }[],
+  };
+}
+
+export type GetTrackOptions = {
+  track_id: string,
+  secret_token?: string,
 };
 
 export type GetTracksOptions = {
@@ -38,26 +57,34 @@ export type SearchOptions = {
 
 export interface SoundCloudClient {
   search(options: SearchOptions): Promise<TrackResource[]>;
-  resolveTrack(options: ResolveTrackOptions): Promise<TrackResource>;
+  resolveTrack(options: ResolveTrackOptions): Promise<TrackResource | null>;
+  getTrack(options: GetTrackOptions): Promise<TrackResource | null>;
   getTracks(options: GetTracksOptions): Promise<TrackResource[]>;
 }
+
+type QueryParams = Record<string, string | number | undefined | null>;
 
 /**
  * A small SoundCloud API client.
  */
 export class SoundCloudV1Client implements SoundCloudClient {
-  #params: Record<string, string>;
+  #params: QueryParams;
   #baseUrl: string;
 
-  constructor(params: Record<string, string>) {
+  // TODO: take a `key` and `secret` option and do this:
+  // https://developers.soundcloud.com/docs/api/guide#client-creds
+  // Can't test that atm because obtaining a key/secret is impossible.
+  constructor(params: QueryParams) {
     this.#params = params;
     this.#baseUrl = 'https://api.soundcloud.com';
   }
 
-  async #get(resource: string, options: Record<string, string>) {
+  async #get(resource: string, options: QueryParams) {
     const url = new URL(resource, this.#baseUrl);
     for (const [key, value] of Object.entries({ ...this.#params, ...options })) {
-      url.searchParams.append(key, value);
+      if (value != null) {
+        url.searchParams.append(key, value.toString());
+      }
     }
     const response = await fetch(url, {
       headers: {
@@ -71,16 +98,16 @@ export class SoundCloudV1Client implements SoundCloudClient {
     return data;
   }
 
-  search(options: SearchOptions) {
-    return this.#get('/tracks', {
-      q: options.q,
-      offset: options.offset.toString(),
-      limit: options.limit.toString(),
-    });
+  search(options: SearchOptions): Promise<TrackResource[]> {
+    return this.#get('/tracks', options);
   }
 
-  resolveTrack(options: ResolveTrackOptions): Promise<TrackResource> {
+  resolveTrack(options: ResolveTrackOptions): Promise<TrackResource | null> {
     return this.#get('/resolve', options);
+  }
+
+  getTrack({ track_id, secret_token }: GetTrackOptions): Promise<TrackResource | null> {
+    return this.#get(`/track/${encodeURIComponent(track_id)}`, { secret_token });
   }
 
   getTracks(options: GetTracksOptions): Promise<TrackResource[]> {
@@ -109,11 +136,13 @@ export class SoundCloudV2Client implements SoundCloudClient {
     throw new Error('Could not determine client ID');
   }
 
-  async #get<T>(resource: string, options: Record<string, string>, isRetry = false): Promise<T> {
+  async #get<T>(resource: string, options: QueryParams, isRetry = false): Promise<T> {
     const clientID = await this.#clientID;
     const url = new URL(resource, this.#baseUrl);
     for (const [key, value] of Object.entries({ client_id: clientID, ...options })) {
-      url.searchParams.append(key, value);
+      if (value != null) {
+        url.searchParams.append(key, value);
+      }
     }
     const response = await fetch(url, {
       headers: {
@@ -140,20 +169,20 @@ export class SoundCloudV2Client implements SoundCloudClient {
   }
 
   async search(options: SearchOptions): Promise<TrackResource[]> {
-    const { collection } = await this.#get('/search/tracks', {
-      q: options.q,
-      offset: `${options.offset}`,
-      limit: `${options.limit}`,
-    });
+    const { collection } = await this.#get('/search/tracks', options);
 
     return collection;
   }
 
-  async resolveTrack(options: ResolveTrackOptions): Promise<TrackResource> {
+  resolveTrack(options: ResolveTrackOptions): Promise<TrackResource> {
     return this.#get('/resolve', { url: options.url });
   }
 
-  async getTracks(options: GetTracksOptions): Promise<TrackResource[]> {
+  getTrack({ track_id, secret_token }: GetTrackOptions): Promise<TrackResource | null> {
+    return this.#get(`/tracks/soundcloud:tracks:${encodeURIComponent(track_id)}`, { secret_token });
+  }
+
+  getTracks(options: GetTracksOptions): Promise<TrackResource[]> {
     return this.#get('/tracks', { ids: options.ids });
   }
 }

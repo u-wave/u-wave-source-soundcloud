@@ -63,7 +63,7 @@ export default function soundCloudSource(_: unknown, opts: SoundCloudOptions) {
 
   async function resolve(url: string) {
     const body = await client.resolveTrack({ url });
-    return normalizeMedia(body);
+    return body ? normalizeMedia(body) : null;
   }
 
   function sortSourceIDsAndURLs(list: string[]): { urls: string[], sourceIDs: string[] } {
@@ -93,19 +93,23 @@ export default function soundCloudSource(_: unknown, opts: SoundCloudOptions) {
     const items: Record<string, UwMedia> = {};
     urls.forEach((url, index) => {
       const item = urlItems[index];
-      items[url] = item;
+      if (item) {
+        items[url] = item;
+      }
     });
     sourceIDItems.forEach((sound) => {
       const item = normalizeMedia(sound);
       items[item.sourceID] = item;
     });
-    return sourceIDsAndURLs.map((input) => items[input]);
+    return sourceIDsAndURLs
+      .map((input) => items[input])
+      .filter((item) => item != null);
   }
 
   async function search(query: string, offset = 0): Promise<UwMedia[]> {
     if (/^https?:\/\/(api\.)?soundcloud\.com\//.test(query)) {
       const track = await resolve(query);
-      return [track];
+      return track ? [track] : [];
     }
 
     const results = await client.search({
