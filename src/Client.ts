@@ -42,6 +42,7 @@ export interface TrackResource {
 
 export type GetTrackOptions = {
   track_id: string,
+  /** Only for the V1 API. */
   secret_token?: string,
 };
 
@@ -184,5 +185,17 @@ export class SoundCloudV2Client implements SoundCloudClient {
 
   getTracks(options: GetTracksOptions): Promise<TrackResource[]> {
     return this.#get('/tracks', { ids: options.ids });
+  }
+
+  async getStreamUrl(track: TrackResource): Promise<string | null> {
+    const format = track.media?.transcodings.find((media) => media.format.protocol === 'progressive');
+    if (!format) {
+      return null;
+    }
+
+    const { url } = await this.#get<{ url: string }>(format.url, {
+      track_authorization: track.track_authorization,
+    });
+    return url;
   }
 }
