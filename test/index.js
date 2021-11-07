@@ -16,6 +16,7 @@ const WEB_HOST = 'https://soundcloud.com';
 const API_V1_HOST = 'https://api.soundcloud.com';
 const API_V2_HOST = 'https://api-v2.soundcloud.com';
 
+const CONTEXT = {};
 const fixture = (name) => path.join(__dirname, 'responses', `${name}.json`);
 
 describe('v1', () => {
@@ -31,7 +32,7 @@ describe('v1', () => {
       })
       .replyWithFile(200, fixture('search'));
 
-    const results = await src.search('oceanfromtheblue');
+    const results = await src.search(CONTEXT, 'oceanfromtheblue');
 
     // Limit is 50 but the results fixture only contains 10 :)
     assert.equal(results.length, 10);
@@ -55,7 +56,7 @@ describe('v1', () => {
         JSON.parse(fs.readFileSync(fixture('track.346713308'), 'utf8')),
       ]);
 
-    const items = await src.get(['389870604', '346713308']);
+    const items = await src.get(CONTEXT, ['389870604', '346713308']);
 
     assert.equal(items.length, 2);
 
@@ -75,7 +76,7 @@ describe('v1', () => {
         return JSON.parse(fs.readFileSync(fixture('401'), 'utf8'));
       });
 
-    await assert.rejects(() => src.get(['389870604', '346713308']), /A request must contain the Authorization header/);
+    await assert.rejects(() => src.get(CONTEXT, ['389870604', '346713308']), /A request must contain the Authorization header/);
   });
 });
 
@@ -94,7 +95,7 @@ describe('v2', () => {
       .replyWithFile(200, fixture('search2'));
 
     const src = createSourceV2();
-    const results = await src.search('oceanfromtheblue');
+    const results = await src.search(CONTEXT, 'oceanfromtheblue');
 
     // Limit is 50 but the results fixture only contains 20 :)
     assert.equal(results.length, 20);
