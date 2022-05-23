@@ -35,11 +35,17 @@ function getThumbnailUrl(item: TrackResource): string | undefined {
   return enlargeThumbnail(thumbnail);
 }
 
-function normalizeMedia(media: TrackResource): UwMedia {
-  const [artist, title] = getArtistTitle(media.title, {
-    defaultArtist: media.user.username,
-  })!;
+function parseMediaTitle(media: UwMedia): UwMedia {
+  const [artist, title] = getArtistTitle(media.title, { defaultArtist: media.artist })!;
 
+  return {
+    ...media,
+    artist,
+    title,
+  };
+}
+
+function normalizeMedia(media: TrackResource): UwMedia {
   const sourceData = {
     fullTitle: media.title,
     permalinkUrl: media.permalink_url,
@@ -50,8 +56,8 @@ function normalizeMedia(media: TrackResource): UwMedia {
   return {
     sourceID: `${media.id}`,
     sourceData,
-    artist,
-    title,
+    artist: media.user.username,
+    title: media.title,
     duration: Math.round(media.duration / 1000),
     thumbnail: getThumbnailUrl(media),
   };
@@ -84,7 +90,7 @@ export default function soundCloudSource(_: unknown, opts: SoundCloudOptions) {
     return { urls, sourceIDs };
   }
 
-  async function get(context: SourceContext, sourceIDsAndURLs: string[]): Promise<UwMedia[]> {
+  async function get(_context: SourceContext, sourceIDsAndURLs: string[]): Promise<UwMedia[]> {
     const { urls, sourceIDs } = sortSourceIDsAndURLs(sourceIDsAndURLs);
 
     // Use the `/resolve` endpoint when items are added by their URL.
@@ -108,10 +114,11 @@ export default function soundCloudSource(_: unknown, opts: SoundCloudOptions) {
     });
     return sourceIDsAndURLs
       .map((input) => items[input])
-      .filter((item) => item != null);
+      .filter((item) => item != null)
+      .map(parseMediaTitle);
   }
 
-  async function search(context: SourceContext, query: string, offset = 0): Promise<UwMedia[]> {
+  async function search(_context: SourceContext, query: string, offset = 0): Promise<UwMedia[]> {
     if (/^https?:\/\/(api\.)?soundcloud\.com\//.test(query)) {
       const track = await resolve(query);
       return track ? [track] : [];
@@ -126,7 +133,7 @@ export default function soundCloudSource(_: unknown, opts: SoundCloudOptions) {
     return results.map(normalizeMedia);
   }
 
-  async function play(context: SourceContext, entry: UwMedia): Promise<PlayData | null> {
+  async function play(_context: SourceContext, entry: UwMedia): Promise<PlayData | null> {
     const track = await client.getTrack({ track_id: entry.sourceID });
     if (!track) {
       return null;
