@@ -118,11 +118,21 @@ export class SoundCloudV1Client implements SoundCloudClient {
 
 export class SoundCloudV2Client implements SoundCloudClient {
   #baseUrl = 'https://api-v2.soundcloud.com/'
-  #clientID = this.#stealClientID()
+  #clientID: Promise<string>
+  #logger: import('pino').Logger
+
+  constructor({ logger }: { logger: import('pino').Logger }) {
+    this.#logger = logger;
+    this.#clientID = this.#determineClientID();
+    // This rejection is expected, but is not handled immediately.
+    this.#clientID.catch((err) => {
+      this.#logger.warn({ err });
+    });
+  }
 
   // I don't want to do this but it is literally impossible to use the V1 API right now.
   // If SoundCloud starts issuing API keys again we'll get rid of this.
-  async #stealClientID() {
+  async #determineClientID() {
     const url = 'https://soundcloud.com/discover'
     const homeResponse = await fetch(url)
     const homepage = await homeResponse.text()
@@ -135,6 +145,14 @@ export class SoundCloudV2Client implements SoundCloudClient {
       }
     }
     throw new Error('Could not determine client ID');
+  }
+
+  #refreshClientID() {
+    this.#clientID = this.#determineClientID();
+    // This rejection is expected, but is not handled immediately.
+    this.#clientID.catch((err) => {
+      this.#logger.warn({ err });
+    });
   }
 
   async #get<T>(resource: string, options: QueryParams, isRetry = false): Promise<T> {
@@ -157,7 +175,7 @@ export class SoundCloudV2Client implements SoundCloudClient {
       }
 
       // Try to refresh the client ID.
-      this.#clientID = this.#stealClientID();
+      this.#refreshClientID();
       return this.#get(resource, options, true);
     }
 
@@ -170,7 +188,7 @@ export class SoundCloudV2Client implements SoundCloudClient {
   }
 
   async search(options: SearchOptions): Promise<TrackResource[]> {
-    const { collection } = await this.#get('/search/tracks', options);
+    const { collection } = await this.#get<{ collection: TrackResource[] }>('/search/tracks', options);
 
     return collection;
   }

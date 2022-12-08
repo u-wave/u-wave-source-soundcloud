@@ -67,10 +67,11 @@ export type SoundCloudOptions = {
   key: string,
 };
 
-export default function soundCloudSource(_: unknown, opts: SoundCloudOptions) {
+export default function soundCloudSource(uw: any, opts: SoundCloudOptions) {
+  const logger = uw.logger.child({ ns: 'u-wave-source-soundcloud' });
   const client: SoundCloudClient = opts?.key
     ? new SoundCloudV1Client({ client_id: opts.key })
-    : new SoundCloudV2Client()
+    : new SoundCloudV2Client({ logger })
 
   async function resolve(url: string) {
     const body = await client.resolveTrack({ url });
