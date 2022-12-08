@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 2.0.4
+- Fix crash when we can't load a client ID.
+
 ## 2.0.3
 - Use original titles in search results.
 
