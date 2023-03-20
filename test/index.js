@@ -2,6 +2,7 @@
 
 const assert = require('assert').strict;
 const nock = require('nock');
+const pino = require('pino');
 const path = require('path');
 const fs = require('fs');
 const soundCloudSource = require('..');
@@ -9,8 +10,10 @@ const soundCloudSource = require('..');
 const FAKE_V1_KEY = 'da5ad14e8278aedac18ba470373c7634';
 const FAKE_V2_KEY = 'YxQYlFPNletSMSZ4b8Svv9FTYgbNbM79';
 
-const createSourceV1 = () => soundCloudSource({}, { key: FAKE_V1_KEY });
-const createSourceV2 = () => soundCloudSource({});
+const logger = pino();
+
+const createSourceV1 = () => soundCloudSource({ logger }, { key: FAKE_V1_KEY });
+const createSourceV2 = () => soundCloudSource({ logger });
 
 const WEB_HOST = 'https://soundcloud.com';
 const API_V1_HOST = 'https://api.soundcloud.com';
