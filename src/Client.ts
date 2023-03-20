@@ -181,7 +181,8 @@ export class SoundCloudV2Client implements SoundCloudClient {
 
     const data = await response.json();
     if (!response.ok) {
-      throw new httpErrors[response.status](data.error?.message ?? data.message);
+      const Err = response.status in httpErrors ? httpErrors[response.status as (keyof typeof httpErrors & number)] : httpErrors.InternalServerError;
+      throw new Err(data.error?.message ?? data.message);
     }
 
     return data;
