@@ -1,11 +1,9 @@
-'use strict';
-
-const assert = require('assert').strict;
-const nock = require('nock');
-const pino = require('pino');
-const path = require('path');
-const fs = require('fs');
-const soundCloudSource = require('..');
+import { expect, describe, it } from 'vitest';
+import nock from 'nock';
+import pino from 'pino';
+import path from 'path';
+import fs from 'fs';
+import soundCloudSource from '..';
 
 const FAKE_V1_KEY = 'da5ad14e8278aedac18ba470373c7634';
 const FAKE_V2_KEY = 'YxQYlFPNletSMSZ4b8Svv9FTYgbNbM79';
@@ -20,7 +18,7 @@ const API_V1_HOST = 'https://api.soundcloud.com';
 const API_V2_HOST = 'https://api-v2.soundcloud.com';
 
 const CONTEXT = {};
-const fixture = (name) => path.join(__dirname, 'responses', `${name}.json`);
+const fixture = (name) => path.join(__dirname, '__fixtures__', `${name}.json`);
 
 describe('v1', () => {
   it('searching for videos', async () => {
@@ -38,11 +36,11 @@ describe('v1', () => {
     const results = await src.search(CONTEXT, 'oceanfromtheblue');
 
     // Limit is 50 but the results fixture only contains 10 :)
-    assert.equal(results.length, 10);
+    expect(results.length).toBe(10);
 
     results.forEach((item) => {
-      assert.ok('artist' in item);
-      assert.ok('title' in item);
+      expect(item).toHaveProperty('artist');
+      expect(item).toHaveProperty('title');
     });
   });
 
@@ -61,10 +59,10 @@ describe('v1', () => {
 
     const items = await src.get(CONTEXT, ['389870604', '346713308']);
 
-    assert.equal(items.length, 2);
+    expect(items).toHaveLength(2);
 
-    assert.equal(items[0].artist, 'oceanfromtheblue(오션)');
-    assert.equal(items[1].artist, 'slchld');
+    expect(items[0].artist).toBe('oceanfromtheblue(오션)');
+    expect(items[1].artist).toBe('slchld');
   });
 
   it('missing authentication', async () => {
@@ -79,7 +77,7 @@ describe('v1', () => {
         return JSON.parse(fs.readFileSync(fixture('401'), 'utf8'));
       });
 
-    await assert.rejects(() => src.get(CONTEXT, ['389870604', '346713308']), /A request must contain the Authorization header/);
+    await expect(() => src.get(CONTEXT, ['389870604', '346713308'])).rejects.toThrow(/A request must contain the Authorization header/);
   });
 });
 
@@ -101,11 +99,11 @@ describe('v2', () => {
     const results = await src.search(CONTEXT, 'oceanfromtheblue');
 
     // Limit is 50 but the results fixture only contains 20 :)
-    assert.equal(results.length, 20);
+    expect(results).toHaveLength(20);
 
     results.forEach((item) => {
-      assert.ok('artist' in item);
-      assert.ok('title' in item);
+      expect(item).toHaveProperty('artist');
+      expect(item).toHaveProperty('title');
     });
   });
 });
