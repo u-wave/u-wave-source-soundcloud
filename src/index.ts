@@ -20,6 +20,10 @@ export interface UwMedia {
   };
 };
 type PlayData = {
+  fullTitle?: string,
+  permalinkUrl?: string,
+  artistUrl?: string,
+  username?: string,
   streamUrl: string,
 };
 
@@ -149,7 +153,13 @@ export default function soundCloudSource(uw: any, opts: SoundCloudOptions) {
       return null;
     }
 
-    return { streamUrl };
+    return {
+      fullTitle: track.title,
+      permalinkUrl: track.permalink_url,
+      artistUrl: track.user.permalink_url,
+      username: track.user.username,
+      streamUrl,
+    };
   }
 
   return {
