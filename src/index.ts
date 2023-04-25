@@ -1,5 +1,5 @@
-import getArtistTitle = require('get-artist-title');
-import { SoundCloudClient, TrackResource, SoundCloudV1Client, SoundCloudV2Client } from './Client';
+import getArtistTitle from 'get-artist-title';
+import { SoundCloudClient, TrackResource, SoundCloudV1Client, SoundCloudV2Client } from './Client.js';
 
 type SourceContext = unknown;
 

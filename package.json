@@ -8,8 +8,11 @@
   "contributors": [
     "Renée Kooi <renee@kooi.me>"
   ],
-  "main": "index.js",
-  "type": "commonjs",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "type": "module",
   "keywords": [
     "u-wave-source",
     "soundcloud"
@@ -20,7 +23,7 @@
   "dependencies": {
     "get-artist-title": "^1.2.0",
     "http-errors": "^2.0.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.9"
   },
   "devDependencies": {
     "@types/http-errors": "^2.0.1",
