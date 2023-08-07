@@ -31,7 +31,7 @@
     "nock": "^13.0.0",
     "pino": "^8.11.0",
     "typescript": "^5.0.2",
-    "vitest": "^0.33.0"
+    "vitest": "^0.34.1"
   },
   "scripts": {
     "prepare": "npm run build",
