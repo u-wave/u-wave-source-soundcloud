@@ -1,6 +1,11 @@
 import * as httpErrors from 'http-errors';
 import fetch from 'node-fetch';
 
+interface ErrorResponse {
+  message?: string;
+  error?: { message?: string };
+}
+
 export type ResolveTrackOptions = {
   url: string,
 };
@@ -80,7 +85,7 @@ export class SoundCloudV1Client implements SoundCloudClient {
     this.#baseUrl = 'https://api.soundcloud.com';
   }
 
-  async #get(resource: string, options: QueryParams) {
+  async #get<T>(resource: string, options: QueryParams) {
     const url = new URL(resource, this.#baseUrl);
     for (const [key, value] of Object.entries({ ...this.#params, ...options })) {
       if (value != null) {
@@ -92,11 +97,11 @@ export class SoundCloudV1Client implements SoundCloudClient {
         accept: 'application/json',
       },
     });
-    const data = await response.json();
+    const data = (await response.json()) as T & ErrorResponse;
     if (!response.ok) {
       throw new Error(data.error?.message ?? data.message);
     }
-    return data;
+    return data as T;
   }
 
   search(options: SearchOptions): Promise<TrackResource[]> {
@@ -179,13 +184,13 @@ export class SoundCloudV2Client implements SoundCloudClient {
       return this.#get(resource, options, true);
     }
 
-    const data = await response.json();
+    const data = (await response.json()) as T & ErrorResponse;
     if (!response.ok) {
       const Err = response.status in httpErrors ? httpErrors[response.status as (keyof typeof httpErrors & number)] : httpErrors.InternalServerError;
       throw new Err(data.error?.message ?? data.message);
     }
 
-    return data;
+    return data as T;
   }
 
   async search(options: SearchOptions): Promise<TrackResource[]> {
