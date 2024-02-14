@@ -1,5 +1,4 @@
-üWave SoundCloud Media Source
-=============================
+# üWave SoundCloud Media Source
 
 A üWave media source for searching songs from SoundCloud.
 
@@ -15,12 +14,12 @@ npm install --save u-wave-source-soundcloud
 import uwave from 'u-wave-core';
 import soundCloudSource from 'u-wave-source-soundcloud';
 
-const uw = uwave({ /* your config */ });
+const uw = uwave({/* your config */});
 
 uw.source('soundcloud', soundCloudSource, {
   // Get an API key by registering an app here:
   // http://soundcloud.com/you/apps
-  key: 'Your SoundCloud API Key'
+  key: 'Your SoundCloud API Key',
 });
 ```
 

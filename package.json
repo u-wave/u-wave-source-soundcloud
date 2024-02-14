@@ -28,15 +28,19 @@
   "devDependencies": {
     "@types/http-errors": "^2.0.1",
     "@types/node-fetch": "^2.5.4",
-    "nock": "^13.0.0",
+    "dprint": "^0.45.0",
+    "nock": "^13.0.3",
+    "oxlint": "^0.2.8",
+    "tsup": "^8.0.1",
     "pino": "^8.11.0",
     "typescript": "^5.0.2",
     "vitest": "^1.0.4"
   },
   "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
     "prepare": "npm run build",
+    "lint": "oxlint src && dprint check",
     "tests-only": "vitest run",
-    "test": "npm run build && npm run tests-only",
-    "build": "tsc"
+    "test": "npm run build && npm run tests-only && npm run lint"
   }
 }

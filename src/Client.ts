@@ -122,9 +122,9 @@ export class SoundCloudV1Client implements SoundCloudClient {
 }
 
 export class SoundCloudV2Client implements SoundCloudClient {
-  #baseUrl = 'https://api-v2.soundcloud.com/'
-  #clientID: Promise<string>
-  #logger: import('pino').Logger
+  #baseUrl = 'https://api-v2.soundcloud.com/';
+  #clientID: Promise<string>;
+  #logger: import('pino').Logger;
 
   constructor({ logger }: { logger: import('pino').Logger }) {
     this.#logger = logger;
@@ -138,12 +138,12 @@ export class SoundCloudV2Client implements SoundCloudClient {
   // I don't want to do this but it is literally impossible to use the V1 API right now.
   // If SoundCloud starts issuing API keys again we'll get rid of this.
   async #determineClientID() {
-    const url = 'https://soundcloud.com/discover'
-    const homeResponse = await fetch(url)
-    const homepage = await homeResponse.text()
+    const url = 'https://soundcloud.com/discover';
+    const homeResponse = await fetch(url);
+    const homepage = await homeResponse.text();
     for (const match of homepage.matchAll(/<script(?:.*?)src="(.*?)"(?:.*?)><\/script>/g)) {
-      const scriptResponse = await fetch(new URL(match[1], url))
-      const js = await scriptResponse.text()
+      const scriptResponse = await fetch(new URL(match[1], url));
+      const js = await scriptResponse.text();
       const m = js.match(/client_id:"(.*?)"/);
       if (m?.[1]) {
         return m[1];
@@ -186,7 +186,9 @@ export class SoundCloudV2Client implements SoundCloudClient {
 
     const data = (await response.json()) as T & ErrorResponse;
     if (!response.ok) {
-      const Err = response.status in httpErrors ? httpErrors[response.status as (keyof typeof httpErrors & number)] : httpErrors.InternalServerError;
+      const Err = response.status in httpErrors
+        ? httpErrors[response.status as (keyof typeof httpErrors & number)]
+        : httpErrors.InternalServerError;
       throw new Err(data.error?.message ?? data.message);
     }
 

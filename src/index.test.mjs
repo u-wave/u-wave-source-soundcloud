@@ -1,8 +1,8 @@
-import { expect, describe, it } from 'vitest';
-import nock from 'nock';
-import pino from 'pino';
-import path from 'path';
 import fs from 'fs';
+import nock from 'nock';
+import path from 'path';
+import pino from 'pino';
+import { describe, expect, it } from 'vitest';
 import soundCloudSource from '..';
 
 const FAKE_V1_KEY = 'da5ad14e8278aedac18ba470373c7634';
@@ -77,7 +77,9 @@ describe('v1', () => {
         return JSON.parse(fs.readFileSync(fixture('401'), 'utf8'));
       });
 
-    await expect(() => src.get(CONTEXT, ['389870604', '346713308'])).rejects.toThrow(/A request must contain the Authorization header/);
+    await expect(() => src.get(CONTEXT, ['389870604', '346713308'])).rejects.toThrow(
+      /A request must contain the Authorization header/,
+    );
   });
 });
 

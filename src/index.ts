@@ -1,5 +1,5 @@
 import getArtistTitle from 'get-artist-title';
-import { SoundCloudClient, TrackResource, SoundCloudV1Client, SoundCloudV2Client } from './Client.js';
+import { type SoundCloudClient, SoundCloudV1Client, SoundCloudV2Client, type TrackResource } from './Client.js';
 
 type SourceContext = unknown;
 
@@ -18,7 +18,7 @@ export interface UwMedia {
     artistUrl: string,
     username: string,
   };
-};
+}
 type PlayData = {
   fullTitle?: string,
   permalinkUrl?: string,
@@ -75,7 +75,7 @@ export default function soundCloudSource(uw: any, opts: SoundCloudOptions) {
   const logger = uw.logger.child({ ns: 'u-wave-source-soundcloud' });
   const client: SoundCloudClient = opts?.key
     ? new SoundCloudV1Client({ client_id: opts.key })
-    : new SoundCloudV2Client({ logger })
+    : new SoundCloudV2Client({ logger });
 
   async function resolve(url: string) {
     const body = await client.resolveTrack({ url });
@@ -117,9 +117,10 @@ export default function soundCloudSource(uw: any, opts: SoundCloudOptions) {
       const item = normalizeMedia(sound);
       items[item.sourceID] = item;
     });
-    return sourceIDsAndURLs
+    const filtered = sourceIDsAndURLs
       .map((input) => items[input])
-      .filter((item) => item != null)
+      .filter((item) => item != null) as UwMedia[];
+    return filtered
       .map(parseMediaTitle);
   }
 
