@@ -100,7 +100,9 @@ export default function soundCloudSource(uw: any, opts: SoundCloudOptions) {
 
     // Use the `/resolve` endpoint when items are added by their URL.
     const urlsPromise = Promise.all(urls.map(resolve));
-    const sourceIDsPromise = client.getTracks({ ids: sourceIDs.join(',') });
+    const sourceIDsPromise = sourceIDs.length > 0
+      ? client.getTracks({ ids: sourceIDs.join(',') })
+      : Promise.resolve([]);
 
     const [urlItems, sourceIDItems] = await Promise.all([urlsPromise, sourceIDsPromise]);
 

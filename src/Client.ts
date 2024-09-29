@@ -142,6 +142,8 @@ export class SoundCloudV2Client implements SoundCloudClient {
     const homeResponse = await fetch(url);
     const homepage = await homeResponse.text();
     for (const match of homepage.matchAll(/<script(?:.*?)src="(.*?)"(?:.*?)><\/script>/g)) {
+      if (match[1] == null) continue;
+
       const scriptResponse = await fetch(new URL(match[1], url));
       const js = await scriptResponse.text();
       const m = js.match(/client_id:"(.*?)"/);
