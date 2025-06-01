@@ -1,5 +1,4 @@
 import * as httpErrors from 'http-errors';
-import fetch from 'node-fetch';
 
 interface ErrorResponse {
   message?: string;
