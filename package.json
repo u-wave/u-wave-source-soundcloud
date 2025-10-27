@@ -32,7 +32,7 @@
     "pino": "^10.0.0",
     "tsup": "^8.0.1",
     "typescript": "^5.0.2",
-    "vitest": "^3.0.2"
+    "vitest": "^4.0.3"
   },
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts",
