@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@types/http-errors": "^2.0.1",
-    "dprint": "^0.55.1",
+    "dprint": "^0.57.1",
     "nock": "^14.0.0",
     "oxlint": "^1.1.0",
     "pino": "^10.0.0",
