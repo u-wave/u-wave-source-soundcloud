@@ -39,6 +39,7 @@
     "prepare": "npm run build",
     "lint": "oxlint src && dprint check",
     "tests-only": "vitest run",
-    "test": "npm run build && npm run tests-only && npm run lint"
+    "test": "npm run build && npm run types && npm run tests-only && npm run lint",
+    "types": "tsc -p . --noEmit"
   }
 }
